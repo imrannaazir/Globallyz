@@ -1,11 +1,7 @@
-import Layout from "../components/ui/Layout";
+import Home from "../pages/Home";
 
 const App = () => {
-  return (
-    <Layout>
-      <h1 className="text-primary">Hello</h1>
-    </Layout>
-  );
+  return <Home />;
 };
 
 export default App;

@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-zoom {
+  animation: zoom 10s infinite;
+}
+
+@layer utilities {
+  .hero-height {
+    height: calc(100vh - 104px);
+  }
+
+  .primary-btn span:first-child {
+    transform: translateX(-101%);
+    transition: transform 0.3s ease-in;
+  }
+  .primary-btn:hover span {
+    transform: translateX(0);
+  }
+}

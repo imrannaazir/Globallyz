@@ -9,8 +9,8 @@ import { CiFacebook } from "react-icons/ci";
 
 export default function TopBar() {
   return (
-    <div className=" bg-primary/30">
-      <div className="mx-auto py-1 w-full max-w-screen-xl flex justify-between">
+    <div className=" bg-primary/10">
+      <div className="mx-auto px-4 py-2 w-full max-w-screen-xl flex justify-between">
         {/*  */}
         <div className="flex gap-2 items-center text-xs">
           {/* address */}
@@ -33,10 +33,10 @@ export default function TopBar() {
         </div>
         {/* social link */}
         <div className="flex gap-2">
-          <CiFacebook />
-          <AiFillTwitterCircle />
-          <AiFillInstagram />
-          <AiFillLinkedin />
+          <CiFacebook className="text-2xl text-gray-300 duration-500 hover:text-primary" />
+          <AiFillTwitterCircle className="text-2xl text-gray-300 duration-500 hover:text-primary" />
+          <AiFillInstagram className="text-2xl text-gray-300 duration-500 hover:text-primary" />
+          <AiFillLinkedin className="text-2xl text-gray-300 duration-500 hover:text-primary" />
         </div>
       </div>
     </div>
