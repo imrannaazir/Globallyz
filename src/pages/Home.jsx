@@ -1,5 +1,6 @@
 import AboutUs from "../components/home/AboutUs";
 import Hero from "../components/home/Hero";
+import Services from "../components/home/Services";
 import Layout from "../components/ui/Layout";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <Layout>
       <Hero />
       <AboutUs />
+      <Services />
     </Layout>
   );
 }

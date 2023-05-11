@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* animation for hero */
 @keyframes zoom {
   0% {
     transform: scale(1);
@@ -18,6 +19,28 @@
   animation: zoom 10s infinite;
 }
 
+/* transition effect to up */
+@keyframes transition1 {
+  0% {
+    transform: translateY(50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* transition effect to down */
+@keyframes transition2 {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 @layer utilities {
   .hero-height {
     height: calc(100vh - 104px);
@@ -29,5 +52,12 @@
   }
   .primary-btn:hover span {
     transform: translateX(0);
+  }
+
+  .transition-up {
+    animation: transition1 0.5s;
+  }
+  .transition-down {
+    animation: transition2 0.5s;
   }
 }
