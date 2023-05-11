@@ -1,4 +1,5 @@
 import PrimaryBtn from "../ui/PrimaryBtn";
+import SecondaryBtn from "../ui/SecondaryBtn";
 
 export default function Hero() {
   return (
@@ -23,7 +24,12 @@ export default function Hero() {
             sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
             rebum.
           </p>
-          <PrimaryBtn>Contact Us</PrimaryBtn>
+
+          {/* btn */}
+          <div className="flex gap-2">
+            <SecondaryBtn>Get Started</SecondaryBtn>
+            <PrimaryBtn>Contact Us</PrimaryBtn>
+          </div>
         </div>
       </div>
     </div>
