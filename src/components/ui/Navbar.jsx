@@ -2,8 +2,25 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+
+  const [scrolling, setScrolling] = useState(true);
+
+  // handle header bg by scrolling
+  const handleNavBg = () => {
+    if (window.scrollY > 20) {
+      setScrolling(false);
+    } else {
+      setScrolling(true);
+    }
+  };
+  window.addEventListener("scroll", handleNavBg);
+
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 sticky top-0  z-40 ">
+    <nav
+      className={`${
+        scrolling || "transition-down"
+      } bg-white border-gray-200 dark:bg-gray-900 sticky top-0  z-40 shadow-md`}
+    >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" className="flex items-center">
           <img
@@ -12,7 +29,7 @@ export default function Navbar() {
             alt="Flowbite Logo"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Flowbite
+            Globallyz
           </span>
         </a>
         <button
