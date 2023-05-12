@@ -3,12 +3,16 @@ import { GiDelighted } from "react-icons/gi";
 import { VscGraph, VscGraphLeft } from "react-icons/vsc";
 import { MdOutlineManageAccounts } from "react-icons/md";
 import { CiDeliveryTruck } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
     <div className="max-w-screen-xl  mx-auto p-4 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 my-20 gap-5 ">
       {/* card 1 */}
-      <div className="px-10 shadow-lg max-w-[400px] rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ">
+      <Link
+        to="/marketing-service"
+        className="px-10 shadow-lg max-w-[400px] rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 "
+      >
         <BsGraphUpArrow className="absolute right-5 top-5 text-[80px] text-primary/40 group-hover:text-white group-hover:transition-up" />
         <div className="my-20">
           <div className="mb-9">
@@ -24,7 +28,7 @@ export default function Services() {
             et ea rebum.
           </p>
         </div>
-      </div>
+      </Link>
       {/* card 2 */}
 
       <div className="px-10 shadow-lg max-w-[400px] rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ">
