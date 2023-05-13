@@ -2,8 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const [serviceDropDown, setServiceDropDown] = useState(false);
-
   const [scrolling, setScrolling] = useState(true);
 
   // handle header bg by scrolling
@@ -66,14 +64,11 @@ export default function Navbar() {
                 Home
               </a>
             </li>
-            <li>
-              <button
-                onClick={() => setServiceDropDown(!serviceDropDown)}
-                className="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded relative bottom-2"
-              >
+            <li className="group">
+              <button className="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded relative bottom-2 ">
                 Service{" "}
                 <svg
-                  className="w-5 h-5 ml-1"
+                  className="w-5 h-5 ml-1 group-hover:rotate-180"
                   aria-hidden="true"
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -88,9 +83,7 @@ export default function Navbar() {
               </button>
               {/* <!-- Dropdown menu --> */}
               <div
-                className={`${
-                  serviceDropDown ? "absolute " : "hidden"
-                } z-10  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
+                className={`absolute hidden group-hover:block z-10  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
               >
                 <ul
                   className="py-2 text-sm text-gray-700 dark:text-gray-400"
@@ -137,23 +130,15 @@ export default function Navbar() {
                     </a>
                   </li>
                 </ul>
-                <div className="py-1">
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
-                  >
-                    Sign out
-                  </a>
-                </div>
               </div>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/team"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                About Us
-              </a>
+                Our Team
+              </Link>
             </li>
             <li>
               <a

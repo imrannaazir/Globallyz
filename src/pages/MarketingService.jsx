@@ -9,7 +9,7 @@ import Layout from "../components/ui/Layout";
 export default function MarketingService() {
   return (
     <Layout>
-      <Banner />
+      <Banner title="Marketing service" />
       <MarketingDetailsLeft />
       <MarketingDetailsRight />
       <BenefitOfDigitalMarketing />
