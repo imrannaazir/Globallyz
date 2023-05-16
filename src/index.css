@@ -41,6 +41,20 @@
   }
 }
 
+@keyframes animateContactBgClr {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @layer utilities {
   .hero-height {
     height: calc(100vh - 104px);
@@ -59,5 +73,33 @@
   }
   .transition-down {
     animation: transition2 0.5s;
+  }
+
+  .contact-us {
+    background-image: url("../src/assets/page-banner1.jpg"),
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-blend-mode: overlay;
+  }
+
+  .contact-bg-color {
+    background-image: linear-gradient(
+      to left bottom,
+      #020b18,
+      #002350,
+      #1a45b0
+    );
+    animation: animateContactBgClr 5s infinite
+      cubic-bezier(0.62, 0.28, 0.23, 0.99);
+    background-size: 400%;
+  }
+
+  .input-style {
+    border: none;
+    border-bottom: 2px solid rgb(128, 126, 126);
+    background: transparent;
+    outline: none;
+    width: 100%;
+    text-transform: capitalize;
+    padding: 1rem 0.4rem;
   }
 }

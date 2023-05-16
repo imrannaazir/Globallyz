@@ -16,13 +16,17 @@ export default function Hero() {
       {/* content */}
       <div className=" relative z-10 flex flex-col items-center justify-center py-20 h-full bg-primary/50">
         <div className="mx-auto w-full max-w-screen-xl p-4">
-          <h3 className="text-white text-[4rem]">We Are</h3>
-          <h1 className="text-[4rem] font-bold text-white">DIGITAL AGENCY</h1>
+          <h3 className="text-white text-[4rem]">We Are Business</h3>
+          <h1 className="text-[4rem] font-bold text-white uppercase">
+            {" "}
+            Development Agency
+          </h1>
           <p className="mt-4 text-white">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore dolore magna aliquyam erat
-            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-            rebum.
+            Outsource your Business Development to us- you have services or
+            products, you are small, medium, or large firm, you may be anywhere
+            on this planet- we are here to you help you launch your services and
+            products worldwide and ensure reaching your offerings to global
+            customers
           </p>
 
           {/* btn */}

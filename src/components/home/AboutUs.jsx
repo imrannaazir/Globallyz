@@ -28,13 +28,12 @@ export default function AboutUs() {
           <div className="h-1 w-[70px] -bottom-4 left-0 bg-primary"></div>
         </div>
         <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam
+          We are a global business development company that helps small, medium,
+          and large firms launch their services and products worldwide. With our
+          expertise, network, and tailored solutions, we ensure your offerings
+          reach a global customer base. From market research to international
+          sales and marketing, we provide comprehensive support to drive your
+          business growth in the global marketplace
         </p>
         <PrimaryBtnAlt>See more</PrimaryBtnAlt>
       </div>
