@@ -5,7 +5,7 @@ import Banner from "../components/general/Banner";
 import Layout from "../components/ui/Layout";
 
 // eslint-disable-next-line react/prop-types
-export default function MarketingService({ service }) {
+export default function SalesServices({ service }) {
   const { name, description, services, faqs } = service || {};
   return (
     <Layout>

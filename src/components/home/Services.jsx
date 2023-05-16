@@ -122,7 +122,7 @@ export default function Services() {
     },
   ];
   return (
-    <div className="max-w-screen-xl  mx-auto p-4 grid lg:grid-cols-6 md:grid-cols-2 sm:grid-cols-1 my-20 gap-1 ">
+    <div className="max-w-screen-xl  mx-auto p-4 grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 my-20 gap-1 ">
       {/* cards */}
       {services.map((service) => (
         <Link
