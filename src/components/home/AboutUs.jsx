@@ -35,7 +35,9 @@ export default function AboutUs() {
           sales and marketing, we provide comprehensive support to drive your
           business growth in the global marketplace
         </p>
-        <PrimaryBtnAlt>See more</PrimaryBtnAlt>
+        <PrimaryBtnAlt shape="  mt-12 px-10 py-5 uppercase rounded-none">
+          See more
+        </PrimaryBtnAlt>
       </div>
     </div>
   );

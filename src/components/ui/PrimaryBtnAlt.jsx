@@ -1,8 +1,8 @@
-// eslint-disable-next-line react/prop-types
-export default function PrimaryBtnAlt({ children }) {
+// eslint-disable-next-line react/prop-types, no-unused-vars
+export default function PrimaryBtnAlt({ children, shape }) {
   return (
     <button
-      className="primary-btn mt-12 px-10 py-5 relative border border-primary uppercase font-semibold tracking-wider leading-none overflow-hidden text-primary hover:text-white"
+      className={`primary-btn   relative border border-primary   tracking-wider leading-none overflow-hidden text-primary hover:text-white ${shape}`}
       type="button"
     >
       <span className="absolute inset-0 bg-primary"></span>
