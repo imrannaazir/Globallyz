@@ -8,6 +8,9 @@ import SalesServices from "../pages/SalesServices";
 import AccountManagement from "../pages/AccountManagement";
 import DeliveryService from "../pages/DeliveryService";
 import DelightService from "../pages/DelightService";
+import Pricing from "../pages/Pricing";
+import PricingOfService from "../pages/PricingOfService";
+import Package from "../pages/Package";
 
 const App = () => {
   const routes = [
@@ -599,6 +602,21 @@ const App = () => {
           ans: " We identify opportunities for cross-selling and upselling through comprehensive customer analysis and understanding their preferences and needs. By leveraging customer data, purchase history, and behavior patterns, we can tailor personalized recommendations and offers that resonate with each individual customer, increasing the likelihood of conversion and delighting them with valuable add-on options.",
         },
       ],
+    },
+    {
+      id: 10,
+      route: "/pricing",
+      component: Pricing,
+    },
+    {
+      id: 11,
+      route: "/pricing/:id",
+      component: PricingOfService,
+    },
+    {
+      id: 12,
+      route: "/package/:id",
+      component: Package,
     },
   ];
 
