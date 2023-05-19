@@ -16,8 +16,8 @@ export default function Hero() {
       {/* content */}
       <div className=" relative z-10 flex flex-col items-center justify-center py-20 h-full bg-primary/50">
         <div className="mx-auto w-full max-w-screen-xl p-4">
-          <h3 className="text-white text-[4rem]">We Are Business</h3>
-          <h1 className="text-[4rem] font-bold text-white uppercase">
+          <h3 className="text-white lg:text-[4rem]">We Are Business</h3>
+          <h1 className="lg:text-[4rem] font-bold text-white uppercase">
             {" "}
             Development Agency
           </h1>
@@ -30,7 +30,7 @@ export default function Hero() {
           </p>
 
           {/* btn */}
-          <div className="flex gap-2">
+          <div className="flex flex-col lg:flex-row gap-2">
             <SecondaryBtn>Get Started</SecondaryBtn>
             <PrimaryBtn>Contact Us</PrimaryBtn>
           </div>

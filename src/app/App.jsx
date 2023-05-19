@@ -440,30 +440,35 @@ const App = () => {
       services: [
         {
           id: 1,
+          name: "Customer relationship manager",
+          details: "",
+        },
+        {
+          id: 2,
           name: "Ensure Delivery	",
           details:
             "Our 'Ensure Delivery' service ensures that your products or services are delivered seamlessly to clients. We meticulously manage every aspect of the delivery process, from logistics to quality control, to guarantee a smooth and timely experience. Our focus is on exceeding client expectations and maintaining a high level of customer satisfaction. With our expertise and attention to detail, you can trust us to ensure the successful delivery of your offerings, allowing you to build a strong reputation and forge lasting relationships with your clients.",
         },
         {
-          id: 2,
+          id: 3,
           name: "Enable organic growth (refer Delight)	",
           details:
             "Our Enable Organic Growth service aims to foster customer delight and drive organic growth for your business. By consistently exceeding customer expectations and delivering exceptional experiences, we create a loyal customer base that generates positive word-of-mouth referrals. Through personalized interactions and value-added services, we nurture long-term relationships and encourage repeat business. Our focus on customer delight enables your business to grow organically, with satisfied customers becoming brand advocates who promote your offerings to others. Experience the power of organic growth through our specialized service and unlock new opportunities for your business.",
         },
         {
-          id: 3,
+          id: 4,
           name: "Consistantly enrich customer relationships 	",
           details:
             "Our 'Consistently Enrich Customer Relationships' service is dedicated to nurturing strong and lasting connections with your customers. Through proactive engagement, personalized communication, and attentive support, we ensure that each interaction adds value and strengthens the customer relationship. By understanding their needs and preferences, we tailor our approach to provide a personalized experience that fosters loyalty and satisfaction. Our commitment to consistently enriching customer relationships sets the foundation for long-term success and maximizes customer lifetime value. Trust us to go above and beyond in nurturing meaningful connections with your customers.",
         },
         {
-          id: 4,
+          id: 5,
           name: "constantly manage relationships with decision makers and influencers	",
           details:
             "Our service of 'Constantly Managing Relationships with Decision Makers and Influencers' focuses on maintaining strong connections with key decision makers and influencers in your industry. Through regular communication, personalized outreach, and strategic engagement, we ensure that your brand remains top-of-mind and influential within the target market. By understanding their needs and priorities, we build trust and credibility, positioning your business for strategic partnerships and opportunities. With our dedicated approach to relationship management, we help you forge valuable connections that drive growth and success in your industry.",
         },
         {
-          id: 5,
+          id: 6,
           name: "provide intel and insights of customers & projects to the Sales & pre-sales 	",
           details:
             "Our service of 'Providing Intel and Insights of Customers & Projects to the Sales & Pre-sales' is aimed at empowering your sales and pre-sales teams with valuable information and data. We gather intel on customer preferences, behaviors, and market trends, providing actionable insights that enhance decision-making processes. By sharing comprehensive project information and customer analytics, we enable your teams to tailor their strategies, pitch effectively, and drive successful outcomes. With our intel and insights, your sales and pre-sales teams can make informed decisions, optimize their approach, and maximize conversion rates. Count on us to provide the necessary knowledge and data for your teams to excel in their roles.",

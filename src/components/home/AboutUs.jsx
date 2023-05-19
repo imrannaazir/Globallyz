@@ -15,7 +15,7 @@ export default function AboutUs() {
           alt=""
         />
         <img
-          className="flex-shrink-0 max-w-[446px]"
+          className="flex-shrink-0 max-w-[346px]"
           src="https://spellthemes.com/demos/html-templates/acea/preview/assets/images/all-img/history-1.png"
           alt=""
         />

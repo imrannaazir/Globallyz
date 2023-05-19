@@ -10,18 +10,18 @@ import { CiFacebook } from "react-icons/ci";
 export default function TopBar() {
   return (
     <div className=" bg-primary/10">
-      <div className="mx-auto px-4 py-2 w-full max-w-screen-xl flex justify-between">
+      <div className="mx-auto px-4 py-2 w-full max-w-screen-xl flex flex-wrap justify-between">
         {/*  */}
-        <div className="flex gap-2 items-center text-xs">
+        <div className="flex flex-wrap gap-2 items-center text-xs">
           {/* address */}
-          <p className="flex gap-2 items-center text-xs">
-            <FaMapMarkerAlt />
+          <p className="flex gap-2 items-start text-xs">
+            <FaMapMarkerAlt className="mt-1" />
             <span>Mumbai, india</span>
           </p>
 
           {/* phone number */}
-          <p className="flex gap-2 items-center text-xs">
-            <BsFillTelephoneFill />
+          <p className="flex gap-2 items-start text-xs">
+            <BsFillTelephoneFill className="mt-1" />
             <span>+9134895 -6555 - 42</span>
           </p>
 

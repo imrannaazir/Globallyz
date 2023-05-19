@@ -93,6 +93,8 @@ export default function Services() {
         "Consistantly enrich customer relationships 	",
         "constantly manage relationships with decision makers and influencers	",
         "provide intel and insights of customers & projects to the Sales & pre-sales 	",
+        "Cross-Sales",
+        "Up-Sales",
       ],
     },
     {
@@ -122,7 +124,7 @@ export default function Services() {
     },
   ];
   return (
-    <div className="max-w-screen-xl  mx-auto p-4 grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 my-20 gap-1 ">
+    <div className="max-w-screen-xl  mx-auto p-4 grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 my-20 gap-1 gap-y-3 ">
       {/* cards */}
       {services.map((service) => (
         <Link

@@ -1,7 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { HiBars3BottomRight } from "react-icons/hi2";
+import { FaAngleDown } from "react-icons/fa";
+import { BiX } from "react-icons/bi";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(true);
 
   // handle header bg by scrolling
@@ -15,150 +19,245 @@ export default function Navbar() {
   window.addEventListener("scroll", handleNavBg);
 
   return (
-    <nav
-      className={`${
-        scrolling || "transition-down"
-      } bg-white border-gray-200 dark:bg-gray-900 sticky top-0  z-40 shadow-md`}
-    >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link to="/" className="flex items-center">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8 mr-3"
-            alt="Flowbite Logo"
-          />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Globallyz
-          </span>
-        </Link>
-        <button
-          data-collapse-toggle="navbar-dropdown"
-          type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-dropdown"
-          aria-expanded="false"
-        >
-          <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-6 h-6"
-            aria-hidden="true"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+    <>
+      <nav
+        className={`${
+          scrolling || "transition-down"
+        } bg-white border-gray-200 dark:bg-gray-900 sticky top-0  z-40 shadow-md `}
+      >
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <Link to="/" className="flex items-center">
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              className="h-8 mr-3"
+              alt="Flowbite Logo"
+            />
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              Globallyz
+            </span>
+          </Link>
+
+          {/*toggle button  */}
+          <div
+            onClick={() => setIsOpen(!isOpen)}
+            className={`text-2xl md:hidden cursor-pointer`}
           >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            {isOpen ? <BiX /> : <HiBars3BottomRight />}
+          </div>
+
+          <ul className="hidden md:flex gap-5 text-sm ">
             <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                aria-current="page"
+              <NavLink
+                to="/marketing-service"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold " : ""
+                }
               >
-                Home
-              </a>
+                Marketing
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/pre-sales-service"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Pre-sales
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/sales-service"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Sales
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/account-management-service"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Account Management
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/delivery-service"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Delivery
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/delight-service"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Delight
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/pricing"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Pricing
+              </NavLink>
             </li>
             <li className="group">
-              <button className="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded relative bottom-2 ">
-                Service{" "}
-                <svg
-                  className="w-5 h-5 ml-1 group-hover:rotate-180"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-              {/* <!-- Dropdown menu --> */}
+              <span className="flex items-center gap-1">
+                About <FaAngleDown />{" "}
+              </span>
               <div
-                className={`absolute hidden group-hover:block z-10  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
+                className={`absolute hidden group-hover:block z-10  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 p-5`}
               >
-                <ul
-                  className="py-2 text-sm text-gray-700 dark:text-gray-400"
-                  aria-labelledby="dropdownLargeButton"
-                >
+                <ul className="py-2 text-sm text-gray-700 flex flex-col gap-3">
                   <li>
-                    <Link
-                      to="/marketing-service"
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    <NavLink
+                      to="/contact"
+                      className={({ isActive }) =>
+                        isActive ? " text-primary font-semibold" : ""
+                      }
                     >
-                      Marketing
-                    </Link>
+                      Contact
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    <NavLink
+                      to="/team"
+                      className={({ isActive }) =>
+                        isActive ? " text-primary font-semibold" : ""
+                      }
                     >
-                      Presales
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >
-                      Sales
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >
-                      Delivery
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >
-                      Delight
-                    </a>
+                      Team
+                    </NavLink>
                   </li>
                 </ul>
               </div>
             </li>
+          </ul>
+          <ul
+            className={`flex flex-col gap-5 text-sm absolute top-16 bg-white p-5 w-full  left-0 md:hidden duration-200 ${
+              isOpen ? "" : "hidden"
+            }`}
+          >
             <li>
-              <Link
-                to="/team"
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              <NavLink
+                to="/marketing-service"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold " : ""
+                }
               >
-                Our Team
-              </Link>
+                Marketing
+              </NavLink>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              <NavLink
+                to="/pre-sales-service"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Pre-sales
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/sales-service"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Sales
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/account-management-service"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Account Management
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/delivery-service"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Delivery
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/delight-service"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Delight
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/pricing"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
               >
                 Pricing
-              </a>
+              </NavLink>
             </li>
-            <li>
-              <Link
-                to="/contact"
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            <li className="group">
+              <span className="flex items-center gap-1">
+                About <FaAngleDown />{" "}
+              </span>
+              <div
+                className={`absolute hidden group-hover:block z-10  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 p-5`}
               >
-                Contact
-              </Link>
+                <ul className="py-2 text-sm text-gray-700 flex flex-col gap-3 ">
+                  <li>
+                    <NavLink
+                      to="/contact"
+                      className={({ isActive }) =>
+                        isActive ? " text-primary font-semibold" : ""
+                      }
+                    >
+                      Contact
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/team"
+                      className={({ isActive }) =>
+                        isActive ? " text-primary font-semibold" : ""
+                      }
+                    >
+                      Team
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+      {/* <aside className="fixed md:hidden top-0 right-0 w-screen h-full bg-black/70 z-[999]"></aside> */}
+    </>
   );
 }
