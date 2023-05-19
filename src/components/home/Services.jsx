@@ -130,7 +130,7 @@ export default function Services() {
         <Link
           key={service.id}
           to={service.route}
-          className={` px-5 shadow-lg max-w-[400px] rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ${service.color}`}
+          className={` px-5 shadow-lg max-w-[400px] rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ${service.color} bg-opacity-70`}
         >
           <service.icon className="absolute right-5 top-5 text-5xl text-primary/40 group-hover:text-white group-hover:transition-up" />
           <div className="my-5">
@@ -140,7 +140,7 @@ export default function Services() {
               </h1>
               <div className="h-[2px] w-[50px] -bottom-4 left-0 bg-primary group-hover:bg-white group-hover:transition-up"></div>
             </div>
-            <div className="font-medium text-gray-400 group-hover:text-white group-hover:transition-down">
+            <div className="font-medium text-gray-900 group-hover:text-white group-hover:transition-down">
               {service.details.map((feature, i) => (
                 <p className="flex items-start gap-1" key={i}>
                   <BsCheck2Circle className="mt-1 min-w-[24px]" />

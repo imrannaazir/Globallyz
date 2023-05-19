@@ -5,7 +5,7 @@ export default function Blogs() {
   return (
     <div className="max-w-screen-xl  mx-auto p-4">
       <div className="flex justify-center">
-        <h3 className="text-[2rem] uppercase font-semibold flex flex-col items-center">
+        <h3 className="text-[2rem] uppercase font-semibold flex flex-col items-center text-white">
           OUR LATEST BLOG
           <div className="h-1 w-[70px]  mt-3 bg-primary"></div>
         </h3>
@@ -14,7 +14,7 @@ export default function Blogs() {
       {/* blogs */}
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 my-10">
         {/* blog  */}
-        <div className=" rounded-lg max-w-[350px] hover:bg-primary/5 hover:shadow-xl group overflow-hidden">
+        <div className="bg-white rounded-lg max-w-[350px]  hover:shadow-xl group overflow-hidden">
           <div className="">
             <figure className="">
               <img
@@ -74,7 +74,7 @@ export default function Blogs() {
           {/* <!-- end single blog post --> */}
         </div>
         {/* blog  */}
-        <div className=" rounded-lg max-w-[350px] hover:bg-primary/5 hover:shadow-xl group overflow-hidden">
+        <div className="bg-white rounded-lg max-w-[350px]  hover:shadow-xl group overflow-hidden">
           <div className="">
             <figure className="">
               <img
@@ -134,7 +134,7 @@ export default function Blogs() {
           {/* <!-- end single blog post --> */}
         </div>
         {/* blog  */}
-        <div className=" rounded-lg max-w-[350px] hover:bg-primary/5 hover:shadow-xl group overflow-hidden">
+        <div className="bg-white rounded-lg max-w-[350px]  hover:shadow-xl group overflow-hidden">
           <div className="">
             <figure className="">
               <img

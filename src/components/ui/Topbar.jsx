@@ -9,7 +9,7 @@ import { CiFacebook } from "react-icons/ci";
 
 export default function TopBar() {
   return (
-    <div className=" bg-primary/10">
+    <div className=" bg-yellow-500/50 z-50">
       <div className="mx-auto px-4 py-2 w-full max-w-screen-xl flex flex-wrap justify-between">
         {/*  */}
         <div className="flex flex-wrap gap-2 items-center text-xs">

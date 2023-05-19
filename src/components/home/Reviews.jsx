@@ -26,7 +26,7 @@ export default function Reviews() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="flex flex-col justify-center my-10">
+          <div className="flex flex-col justify-center my-10 ">
             <div className=" flex flex-col gap-y-5 mx-auto">
               <img
                 className="h-32 w-32"
