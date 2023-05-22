@@ -9,7 +9,10 @@ export default function MarketingService({ service }) {
   const { name, description, services, faqs } = service || {};
   return (
     <Layout>
-      <Banner title={name} />
+      <Banner
+        img="https://i.ibb.co/ZVkpZRT/Digital-marketing.webp"
+        title={name}
+      />
       <BenefitOfDigitalMarketing
         name={name}
         description={description}

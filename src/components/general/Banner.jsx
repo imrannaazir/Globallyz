@@ -1,14 +1,14 @@
 // eslint-disable-next-line react/prop-types
-export default function Banner({ title }) {
+export default function Banner({ title, img }) {
   return (
     <div className="relative h-96">
       {/* Background img */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-primary opacity-50"></div>
         <img
-          src="https://spellthemes.com/demos/html-templates/acea/preview/assets/images/banner/page-banner1.jpg"
+          src={img}
           alt="Background Image"
-          className="object-cover object-bottom w-full h-full animate-zoom"
+          className="object-cover object-center w-full h-full animate-zoom"
         />
       </div>
       {/* content */}

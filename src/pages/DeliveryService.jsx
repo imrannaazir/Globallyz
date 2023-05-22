@@ -9,7 +9,7 @@ export default function DeliveryService({ service }) {
   const { name, description, services, faqs } = service || {};
   return (
     <Layout>
-      <Banner title={name} />
+      <Banner title={name} img="https://i.ibb.co/dQWf6pz/Delivery.webp" />
       <BenefitOfDigitalMarketing
         name={name}
         description={description}

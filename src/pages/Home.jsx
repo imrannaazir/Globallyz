@@ -12,7 +12,7 @@ export default function Home() {
       <div className="fixed inset-0 overflow-hidden -z-10">
         <div className="fixed inset-0 bg-black opacity-60 z-10"></div>
         <img
-          src="https://spellthemes.com/demos/html-templates/acea/preview/assets/images/banner/banner1.jpg"
+          src="https://i.ibb.co/s355sn6/background.webp"
           alt="Background Image"
           className="object-cover object-center w-full h-full animate-zoom"
         />

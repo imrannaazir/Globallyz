@@ -98,12 +98,12 @@ export default function Navbar() {
             </li>
             <li>
               <NavLink
-                to="/delight-service"
+                to="/strategic-alliances-partnerships-service"
                 className={({ isActive }) =>
                   isActive ? " text-primary font-semibold" : ""
                 }
               >
-                Delight
+                Strategic Alliances & Partnerships
               </NavLink>
             </li>
             <li>
@@ -210,7 +210,7 @@ export default function Navbar() {
                   isActive ? " text-primary font-semibold" : ""
                 }
               >
-                Delight
+                Strategic Alliances & Partnerships
               </NavLink>
             </li>
             <li>

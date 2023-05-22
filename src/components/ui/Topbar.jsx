@@ -33,10 +33,10 @@ export default function TopBar() {
         </div>
         {/* social link */}
         <div className="flex gap-2">
-          <CiFacebook className="text-2xl text-gray-300 duration-500 hover:text-primary" />
-          <AiFillTwitterCircle className="text-2xl text-gray-300 duration-500 hover:text-primary" />
-          <AiFillInstagram className="text-2xl text-gray-300 duration-500 hover:text-primary" />
-          <AiFillLinkedin className="text-2xl text-gray-300 duration-500 hover:text-primary" />
+          <CiFacebook className="text-2xl text-[#3b5998] duration-500 hover:text-primary" />
+          <AiFillTwitterCircle className="text-2xl text-[#00acee] duration-500 hover:text-primary" />
+          <AiFillInstagram className="text-2xl text-[#d62976] duration-500 hover:text-primary" />
+          <AiFillLinkedin className="text-2xl text-[#0072b1] duration-500 hover:text-primary" />
         </div>
       </div>
     </div>

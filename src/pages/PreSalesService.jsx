@@ -9,7 +9,7 @@ export default function PreSalesService({ service }) {
   const { name, description, services, faqs } = service || {};
   return (
     <Layout>
-      <Banner title={name} />
+      <Banner title={name} img="https://i.ibb.co/2PdFrxR/presales.webp" />
       <BenefitOfDigitalMarketing
         name={name}
         description={description}

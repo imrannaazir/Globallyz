@@ -7,10 +7,10 @@ import PreSalesService from "../pages/PreSalesService";
 import SalesServices from "../pages/SalesServices";
 import AccountManagement from "../pages/AccountManagement";
 import DeliveryService from "../pages/DeliveryService";
-import DelightService from "../pages/DelightService";
 import Pricing from "../pages/Pricing";
 import PricingOfService from "../pages/PricingOfService";
 import Package from "../pages/Package";
+import StrategicAlliancesPartnerships from "../pages/StrategicAlliancesPartnerships";
 
 const App = () => {
   const routes = [
@@ -574,9 +574,9 @@ const App = () => {
     },
     {
       id: 9,
-      route: "/delight-service",
-      component: DelightService,
-      name: "Delight Service",
+      route: "/strategic-alliances-partnerships-service",
+      component: StrategicAlliancesPartnerships,
+      name: "Strategic Alliances Partnerships Service",
       description:
         "With our Delight Service, we go the extra mile to exceed customer expectations and create memorable experiences. Through Cross Sell and Up Sell strategies, we identify opportunities to offer additional products or services that complement customers' needs. By leveraging customer insights and personalized approaches, we provide tailored recommendations that add value and enhance their journey. Whether it's suggesting relevant upgrades or showcasing exclusive offers, our goal is to delight customers, drive repeat business, and foster long-term loyalty. We believe that going beyond satisfaction and surprising customers with exceptional service leads to positive word-of-mouth, increased revenue, and a strong competitive advantage. Experience the power of our Delight Service and elevate your customer relationships to new heights.",
       featuredImg: "",

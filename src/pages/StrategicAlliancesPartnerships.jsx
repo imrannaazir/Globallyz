@@ -5,11 +5,14 @@ import Banner from "../components/general/Banner";
 import Layout from "../components/ui/Layout";
 
 // eslint-disable-next-line react/prop-types
-export default function DelightService({ service }) {
+export default function StrategicAlliancesPartnerships({ service }) {
   const { name, description, services, faqs } = service || {};
   return (
     <Layout>
-      <Banner title={name} />
+      <Banner
+        title={name}
+        img="https://i.ibb.co/2FsZt3q/strategic-alliance-Partnership.webp"
+      />
       <BenefitOfDigitalMarketing
         name={name}
         description={description}
