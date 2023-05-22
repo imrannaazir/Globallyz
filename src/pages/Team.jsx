@@ -30,14 +30,12 @@ export default function Team() {
     },
   ];
   return (
-    <Layout>
+    <Layout bg_img="https://i.ibb.co/s12vqhs/team.webp">
       <Banner title="Our Team" />
       <div className="max-w-screen-xl  flex-wrap   mx-auto p-4">
         <div className="text-center">
-          <h5 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to bg-secondary">
-            Our Experts
-          </h5>
-          <h3 className="text-[3rem] font-semibold text-gray-700">
+          <h5 className="text-lg font-semibold text-gray-300">Our Experts</h5>
+          <h3 className="text-[3rem] font-semibold text-white">
             Our Awesome Team
           </h3>
         </div>

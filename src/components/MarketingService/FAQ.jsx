@@ -12,8 +12,8 @@ export default function Faq({ faq }) {
     }
   };
   return (
-    <div className="bg-primary/10 border-primary/10  border-2">
-      <h2>
+    <div className="bg-white  border-2 rounded-lg">
+      <h2 className="text-lg">
         <button
           onClick={() => handleOpen(1)}
           type="button"

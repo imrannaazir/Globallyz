@@ -8,11 +8,8 @@ import Layout from "../components/ui/Layout";
 export default function StrategicAlliancesPartnerships({ service }) {
   const { name, description, services, faqs } = service || {};
   return (
-    <Layout>
-      <Banner
-        title={name}
-        img="https://i.ibb.co/2FsZt3q/strategic-alliance-Partnership.webp"
-      />
+    <Layout bg_img="https://i.ibb.co/2FsZt3q/strategic-alliance-Partnership.webp">
+      <Banner title={name} />
       <BenefitOfDigitalMarketing
         name={name}
         description={description}

@@ -24,7 +24,7 @@ export default function Package() {
       {
         id: 2,
         planName: "Premium",
-        color: "red-100",
+        color: "orange-100",
         monthlyPrice: 200,
         quarterlyPrice: 540,
         annualPrice: 2000,
@@ -40,7 +40,7 @@ export default function Package() {
       {
         id: 3,
         planName: "Elite",
-        color: "blue-100",
+        color: "yellow-100",
         monthlyPrice: 300,
         quarterlyPrice: 810,
         annualPrice: 3000,
@@ -57,7 +57,7 @@ export default function Package() {
   };
 
   return (
-    <Layout>
+    <Layout bg_img="https://i.ibb.co/W64yYcK/pricing.webp">
       <Banner title="Influencer Marketing Pricing"></Banner>
       <div className="max-w-screen-xl  mx-auto p-4 grid grid-cols-3 gap-5 my-20 ">
         {packages.plans.map((plan) => (

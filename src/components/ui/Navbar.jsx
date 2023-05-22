@@ -32,7 +32,7 @@ export default function Navbar() {
               className="h-8 mr-3"
               alt="Flowbite Logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap text-primary font-[cursive]">
               Globallyz
             </span>
           </Link>

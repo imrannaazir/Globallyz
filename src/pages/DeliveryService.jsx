@@ -8,8 +8,8 @@ import Layout from "../components/ui/Layout";
 export default function DeliveryService({ service }) {
   const { name, description, services, faqs } = service || {};
   return (
-    <Layout>
-      <Banner title={name} img="https://i.ibb.co/dQWf6pz/Delivery.webp" />
+    <Layout bg_img="https://i.ibb.co/dQWf6pz/Delivery.webp">
+      <Banner title={name} />
       <BenefitOfDigitalMarketing
         name={name}
         description={description}

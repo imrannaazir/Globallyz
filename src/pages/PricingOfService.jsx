@@ -669,9 +669,9 @@ export default function PricingOfService() {
     },
   ];
   return (
-    <Layout>
+    <Layout bg_img="https://i.ibb.co/W64yYcK/pricing.webp">
       <Banner title="Marketing Service pricing" />
-      <div className=" bg-gray-100 py-10">
+      <div className="  py-10">
         <div className="max-w-screen-xl  mx-auto p-4 grid grid-cols-4 gap-5">
           {marketingPricing.map((pricing) => (
             <div

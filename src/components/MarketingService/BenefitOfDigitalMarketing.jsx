@@ -4,7 +4,7 @@ import SecondaryBtn from "../ui/SecondaryBtn";
 // eslint-disable-next-line react/prop-types
 export default function BenefitOfDigitalMarketing({ name, url, description }) {
   return (
-    <div className="max-w-screen-xl  flex-wrap   mx-auto p-4">
+    <div className="max-w-screen-xl  flex-wrap   mx-auto p-4 bg-white my-10 rounded-lg">
       <div className="text-center py-5">
         <h2 className="text-gray-700 text-[2rem] font-semibold">
           How {name} Drive Business Growth

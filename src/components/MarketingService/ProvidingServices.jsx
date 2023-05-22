@@ -10,10 +10,10 @@ export default function ProvidingServices({ name, services }) {
       <div className="max-w-screen-xl  mx-auto px-4 ">
         {/*  */}
         <div className="text-center">
-          <h2 className="text-[2rem] font-semibold text-gray-700">
+          <h2 className="text-[2rem] font-semibold text-white">
             Globallyz’s {name}
           </h2>
-          <p className="text-lg text-primary tracking-wide">
+          <p className="text-lg text-gray-300 tracking-wide">
             Build Brand Recognition as an Industry Leader and Increase
             Profitability
           </p>
