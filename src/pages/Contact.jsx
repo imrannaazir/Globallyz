@@ -6,7 +6,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 
 export default function Contact() {
   return (
-    <Layout>
+    <Layout bg_img="https://i.ibb.co/mc2yb94/contact.webp">
       <Banner title="Contact Us" />
       {/* contact us */}
       <div className="contact-us ">
@@ -95,7 +95,9 @@ export default function Contact() {
                 ></textarea>
               </div>
               <div className="text-end">
-                <PrimaryBtnAlt>Send Message</PrimaryBtnAlt>
+                <PrimaryBtnAlt shape="rounded-full px-6 py-3 my-2">
+                  Send Message
+                </PrimaryBtnAlt>
               </div>
             </form>
           </div>

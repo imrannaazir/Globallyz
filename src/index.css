@@ -78,12 +78,6 @@
     animation: transition2 0.5s;
   }
 
-  .contact-us {
-    background-image: url("../src/assets/page-banner1.jpg"),
-      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    background-blend-mode: overlay;
-  }
-
   .contact-bg-color {
     background-image: linear-gradient(
       to left bottom,
