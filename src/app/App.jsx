@@ -615,12 +615,12 @@ const App = () => {
     },
     {
       id: 11,
-      route: "/pricing/:id",
+      route: "/pricing/:name",
       component: PricingOfService,
     },
     {
       id: 12,
-      route: "/package/:id",
+      route: "/pricing/:name/:service",
       component: Package,
     },
   ];

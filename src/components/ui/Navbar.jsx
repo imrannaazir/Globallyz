@@ -28,13 +28,13 @@ export default function Navbar() {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-center">
             <img
-              src="https://i.ibb.co/ZHjmkS1/Epicize.png"
+              src="https://i.ibb.co/qWTXjcY/Globallyz-logo.png"
               className="h-12 mr-3 rounded-full"
-              alt="Flowbite Logo"
+              alt="Globallyz logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-primary font-[cursive]">
-              Globallyz
-            </span>
+            {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-primary font-[cursive]">
+              Globallyz 
+            </span>*/}
           </Link>
 
           {/*toggle button  */}
