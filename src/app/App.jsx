@@ -11,6 +11,7 @@ import Pricing from "../pages/Pricing";
 import PricingOfService from "../pages/PricingOfService";
 import Package from "../pages/Package";
 import StrategicAlliancesPartnerships from "../pages/StrategicAlliancesPartnerships";
+import Testimonials from "../pages/Testimonials";
 
 const App = () => {
   const routes = [
@@ -622,6 +623,11 @@ const App = () => {
       id: 12,
       route: "/pricing/:name/:service",
       component: Package,
+    },
+    {
+      id: 12,
+      route: "/testimonials",
+      component: Testimonials,
     },
   ];
 
