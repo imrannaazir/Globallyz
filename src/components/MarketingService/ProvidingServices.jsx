@@ -41,8 +41,10 @@ export default function ProvidingServices({ name, services }) {
         </div>
       </div>
       {/* btn */}
-      <div className="text-center ">
-        <SecondaryBtn newClass="rounded-full">Get Started Now</SecondaryBtn>
+      <div className="text-center mt-20">
+        <SecondaryBtn url="/contact" newClass="rounded-full">
+          Get Started Now
+        </SecondaryBtn>
       </div>
     </div>
   );

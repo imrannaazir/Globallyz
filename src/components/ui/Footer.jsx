@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-white/70 dark:bg-gray-900">
@@ -19,24 +21,19 @@ const Footer = () => {
               </h2>
               <ul className="text-primary dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className=" hover:underline">
-                    About
-                  </a>
+                  <Link to="/team" className=" hover:underline">
+                    Our Team
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link to="/career" className="hover:underline">
                     Careers
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
-                    Brand Center
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link to="/blog/1" className="hover:underline">
                     Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -47,19 +44,29 @@ const Footer = () => {
               </h2>
               <ul className="text-primary dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="https://www.instagram.com/globallyz/?fbclid=IwAR0S4qDEgjcfH9ozrY0B0ZA_4f_CCpxShdpARqWfEig1C-EyZZmth52Ln8Y"
+                    target="_blank"
+                    className="hover:underline"
+                    rel="noreferrer"
+                  >
                     Twitter
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100092753354641&is_tour_completed=true"
+                    target="_blank"
+                    className="hover:underline"
+                    rel="noreferrer"
+                  >
                     Facebook
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link to="/contact" className="hover:underline">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

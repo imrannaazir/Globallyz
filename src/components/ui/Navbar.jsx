@@ -116,6 +116,16 @@ export default function Navbar() {
                 Pricing
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/career"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Careers
+              </NavLink>
+            </li>
             <li className="group">
               <span className="flex items-center gap-1">
                 About <FaAngleDown />{" "}

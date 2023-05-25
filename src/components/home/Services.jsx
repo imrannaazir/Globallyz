@@ -40,22 +40,48 @@ export default function Services() {
       color: "bg-cyan-100",
       route: "/pre-sales-service",
       name: "Pre-Sales",
-      details: [
-        "Conductong competitor research",
-        "Conduction customer analysis",
-        "Prospecting",
-        "Qualifying leads	",
-        "Networking",
-        "Making discovery calls",
-        "Performing product demos	",
-        "Drafting and delivering proposals",
-        "Enable slaes team with quaified leads	",
-        "Handover leads to sales	",
-        "Do pilots/proof of concepts	",
-        "prepare sales pitches/decks	",
-        "Drafting and delivering Contracts/SOWs/Changes to contracts",
-        "after sale partnership with customer until the implementation is successfull",
-        "address challenges between the customers ad the delivery	",
+      sub_service: [
+        {
+          id: 1,
+          name: "Prospecting",
+          details: [
+            " Research and Finding the contacts",
+            "Conducting competitor research  ",
+            "Conducting customer analysis  ",
+            "Leveraging the Potential of Referrals  ",
+            "Collaborating with Marketing and Sales teams to bater Intel (Customer insights)  ",
+            " Cold calling/emails  ",
+            "Making appointments  ",
+            "  Work with alliances for pay-per-appointment ",
+            " Qualifying leads  ",
+            " Develop Strategic plans  ",
+          ],
+        },
+        {
+          id: 2,
+          name: " After making contact with the Leads  ",
+          details: [
+            "Making customized presentations & materials  ",
+            "Working with the Marketing team for Marketing content",
+            "Prepare sales pitches/decks  ",
+            " Making Discovery calls (knowing customer pain points)  ",
+            "Performing product demos  ",
+            "Enable sales team with qualified leads  ",
+            "Handover Qualified leads to sales  ",
+          ],
+        },
+        {
+          id: 3,
+          name: "After handing over to the sales  ",
+          details: [
+            "Collaborate with Sales on pitches/decks",
+            "Drafting and delivering Contracts/SOWs/Changes to contracts",
+            "Collaborate with Sales on RFI/RFP/RFQs",
+            " Partnership with customers after-sales",
+            "Ensure delivery with delivery teams ",
+            " Networking",
+          ],
+        },
       ],
     },
     {
@@ -65,20 +91,19 @@ export default function Services() {
       route: "/sales-service",
       name: "Sales",
       details: [
-        "Persuade leads to Cutomer coversion	",
-        "In-person meets	",
-        "email/call follow ups	",
-        "relatiosnhip events	",
-        "provide testimonials	",
-        "know the heirarchy and customer potential	",
-        "Negotiation and closing - sales job	",
-        "Prep sign SOWs/Contracts	",
-        "Introduce & establish  Account Managers	",
-        "on and off gauge the implementation success/failure	",
-        "Identify Strategic parterships 	",
-        "Networking",
-        "Insights to Prodcut team	",
-        "Course correction to Pre-sales	",
+        " Reach out ad set up meetings with customers ",
+        "Identify possible Referrals ",
+        "Be the first point person for Customer",
+        " Collaborate with Delivery teams to do pilots/proof of concepts",
+        "Drafting and Delivering proposals ",
+        "Responding to RFI/RFP/RFQs",
+        "Sign Contracts ",
+        "Provide insights to Marketing teams",
+        "Collaborate with Pre-Sales on course corrections in prospecting ",
+        "Collaborate with Delivery and Product teams ",
+        "Ensure CXO level contacts (Decision influencers/takers)  ",
+        "Work with ACD teams for Delight (cross-sell/up-sell)  ",
+        "Develop Strategic plans  ",
       ],
     },
     {
@@ -86,20 +111,71 @@ export default function Services() {
       icon: MdOutlineManageAccounts,
       color: "bg-pink-100",
       route: "/account-management-service",
-      name: "Account Management",
-      details: [
-        "Customer relationship manager",
-        "Ensure Delivery	",
-        "Enable organic growth (refer Delight)	",
-        "Consistantly enrich customer relationships 	",
-        "constantly manage relationships with decision makers and influencers	",
-        "provide intel and insights of customers & projects to the Sales & pre-sales 	",
-        "Cross-Sales",
-        "Up-Sales",
+      name: "  Account Management / CRM / Delight (ACD)",
+      sub_service: [
+        {
+          id: 1,
+          name: "Customer Relationship Management ",
+          details: [
+            " Enrich Customer Relationships with ground-level teams - decision Influencers (For ex: Leads, Managers, Directors)",
+            "Enable organic growth by consistently managing relationships with Decision takers (for ex: D, VP, CxO)",
+            " Enhance the visibility of the brand and offerings to CXO levels",
+            " Provide intel and insights of customers & projects to the Sales & pre-sales  ",
+            "Offer customers with proof of concept[ts/pilot projects/consulting services",
+          ],
+        },
+        {
+          id: 2,
+          name: "P & Management   ",
+          details: [
+            "Write contracts with SLAs  ",
+            "Comply with Contractual change requests/amendments ",
+            "Respond to RFI/RFQ/RFP",
+            "Collaborate with Pre-Sales, Sales teams for new pitches  ",
+            "Ensure invoices are time submitted to the customers ",
+            "Ensure follow ups and Account Receivables and Account Payables ",
+            "Be accountable for the Business portfolios  ",
+          ],
+        },
+        {
+          id: 3,
+          name: "Delivery   ",
+          details: [
+            "Collaborate with Delivery teams and ensure Delivery ",
+            "Speak the customer voice to Delivery teams ",
+            "Delight  ",
+            "Up-Sell  ",
+            "Cross-Sell ",
+          ],
+        },
+        {
+          id: 4,
+          name: "  Strategic Alliances & Partnerships  ",
+          details: [
+            "with competencies (MS Azure, AWS, Google, IBM, Salesforce, .etc)",
+            "with Domain/Industry Experts  ",
+            "with Domain Entities: Agencies/Companies/Organizations/Institutes  ",
+            "with Technology/Industry Experts ",
+            "with Technology Entities: Agencies/Companies/Organizations/Institutes  ",
+          ],
+        },
       ],
     },
     {
       id: 5,
+      icon: DiTechcrunch,
+      color: "bg-green-100",
+      route: "/strategic-alliances-partnerships-service",
+      name: "Strategic Alliances & Partnerships",
+      details: [
+        "With Competencies(MS Azure , AWS, Google, IBM, Salesforce, .etc)",
+        "with Domain/industry Experts",
+        "with Domain Entities Agencies /Companies /Organizations /Institutes",
+        "with Technology/industry Experts",
+      ],
+    },
+    {
+      id: 6,
       icon: FaHandshake,
       color: "bg-yellow-100",
       route: "/delivery-service",
@@ -119,139 +195,60 @@ export default function Services() {
         link_title: "Dilizent",
       },
     },
-    {
-      id: 6,
-      icon: DiTechcrunch,
-      color: "bg-green-100",
-      route: "/strategic-alliances-partnerships-service",
-      name: "Strategic Alliances & Partnerships",
-      details: [
-        "With Competencies(MS Azure , AWS, Google, IBM, Salesforce, .etc)",
-        "with Domain/industry Experts",
-        "with Domain Entities Agencies /Companies /Organizations /Institutes",
-        "with Technology/industry Experts",
-      ],
-    },
   ];
   return (
     <div className="max-w-screen-xl  mx-auto p-4 grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 my-20 gap-1 gap-y-3 ">
       {/* cards */}
       {services.map((service) => (
-        <Link
+        <div
           key={service.id}
-          to={service.route}
           className={` px-5 shadow-lg max-w-[400px] rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ${service.color} bg-opacity-70`}
         >
-          <service.icon className="absolute right-5 top-5 text-5xl text-primary/40 group-hover:text-white group-hover:transition-up" />
-          <div className="my-5">
-            <div className="mb-9">
-              <h1 className="text-2xl  relative mb-3 text-primary group-hover:text-white group-hover:transition-up">
-                {service.name}
-              </h1>
-              <div className="h-[2px] w-[50px] -bottom-4 left-0 bg-primary group-hover:bg-white group-hover:transition-up"></div>
+          <Link to={service.route}>
+            <service.icon className="absolute right-5 top-5 text-5xl text-primary/40 group-hover:text-white group-hover:transition-up" />
+            <div className="my-5">
+              <div className="mb-9">
+                <h1 className="text-2xl  relative mb-3 text-primary group-hover:text-white group-hover:transition-up">
+                  {service.name}
+                </h1>
+                <div className="h-[2px] w-[50px] -bottom-4 left-0 bg-primary group-hover:bg-white group-hover:transition-up"></div>
+              </div>
+              <div className="font-medium text-gray-900 group-hover:text-white group-hover:transition-down">
+                {service?.details?.map((feature, i) => (
+                  <p className="flex items-start gap-1" key={i}>
+                    <BsCheck2Circle className="mt-1 min-w-[24px]" />
+                    {feature}
+                  </p>
+                ))}
+                {service?.sub_service?.map((service) => (
+                  <div key={service?.id}>
+                    <h4 className="font-bold">{service?.name}</h4>
+                    {/* if sub service is available */}
+                    {service?.details.map((feature, i) => (
+                      <p className="flex items-start gap-1" key={i}>
+                        <BsCheck2Circle className="mt-1 min-w-[24px]" />
+                        {feature}
+                      </p>
+                    ))}
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="font-medium text-gray-900 group-hover:text-white group-hover:transition-down">
-              {service.details.map((feature, i) => (
-                <p className="flex items-start gap-1" key={i}>
-                  <BsCheck2Circle className="mt-1 min-w-[24px]" />
-                  {feature}
-                </p>
-              ))}
-            </div>
-          </div>
-        </Link>
+          </Link>
+          {/* if link is available */}
+          {service?.link && (
+            <a
+              href={service?.link?.url}
+              target="_blank"
+              className="border-2 px-6 py-3 border-black 
+                  absolute z-30 group-hover:transition-up group-hover:border-white group-hover:text-white"
+              rel="noreferrer"
+            >
+              {service?.link?.link_title}
+            </a>
+          )}
+        </div>
       ))}
-
-      {/*  <div className="px-10 shadow-lg max-w-[400px] rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ">
-      <VscGraphLeft className="absolute right-5 top-5 text-[80px] text-primary/40 group-hover:text-white group-hover:transition-up" />
-      <div className="my-20">
-        <div className="mb-9">
-          <h1 className="text-2xl  relative mb-3 text-primary group-hover:text-white group-hover:transition-up">
-            Presales
-          </h1>
-          <div className="h-[2px] w-[50px] -bottom-4 left-0 bg-primary group-hover:bg-white group-hover:transition-up"></div>
-        </div>
-        <p className="font-medium text-gray-400 group-hover:text-white group-hover:transition-down">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-          et ea rebum.
-        </p>
-      </div>
-    </div>
-
-
-    <div className="px-10 shadow-lg max-w-[400px] rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ">
-      <VscGraph className="absolute right-5 top-5 text-[80px] text-primary/40 group-hover:text-white group-hover:transition-up" />
-      <div className="my-20">
-        <div className="mb-9">
-          <h1 className="text-2xl  relative mb-3 text-primary group-hover:text-white group-hover:transition-up">
-            Sales
-          </h1>
-          <div className="h-[2px] w-[50px] -bottom-4 left-0 bg-primary group-hover:bg-white group-hover:transition-up"></div>
-        </div>
-        <p className="font-medium text-gray-400 group-hover:text-white group-hover:transition-down">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-          et ea rebum.
-        </p>
-      </div>
-    </div>
-
-    <div className="px-10 shadow-lg max-w-[400px] rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ">
-      <MdOutlineManageAccounts className="absolute right-5 top-5 text-[80px] text-primary/40 group-hover:text-white group-hover:transition-up" />
-      <div className="my-20">
-        <div className="mb-9">
-          <h1 className="text-2xl  relative mb-3 text-primary group-hover:text-white group-hover:transition-up">
-            Account Management
-          </h1>
-          <div className="h-[2px] w-[50px] -bottom-4 left-0 bg-primary group-hover:bg-white group-hover:transition-up"></div>
-        </div>
-        <p className="font-medium text-gray-400 group-hover:text-white group-hover:transition-down">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-          et ea rebum.
-        </p>
-      </div>
-    </div>
-
-    <div className="px-10 shadow-lg max-w-[400px] rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ">
-      <CiDeliveryTruck className="absolute right-5 top-5 text-[80px] text-primary/40 group-hover:text-white group-hover:transition-up" />
-      <div className="my-20">
-        <div className="mb-9">
-          <h1 className="text-2xl  relative mb-3 text-primary group-hover:text-white group-hover:transition-up">
-            Delivery
-          </h1>
-          <div className="h-[2px] w-[50px] -bottom-4 left-0 bg-primary group-hover:bg-white group-hover:transition-up"></div>
-        </div>
-        <p className="font-medium text-gray-400 group-hover:text-white group-hover:transition-down">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-          et ea rebum.
-        </p>
-      </div>
-    </div>
- 
-    <div className="px-10 shadow-lg max-w-[400px] rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ">
-      <GiDelighted className="absolute right-5 top-5 text-[80px] text-primary/40 group-hover:text-white group-hover:transition-up" />
-      <div className="my-20">
-        <div className="mb-9">
-          <h1 className="text-2xl  relative mb-3 text-primary group-hover:text-white group-hover:transition-up">
-            Delight
-          </h1>
-          <div className="h-[2px] w-[50px] -bottom-4 left-0 bg-primary group-hover:bg-white group-hover:transition-up"></div>
-        </div>
-        <p className="font-medium text-gray-400 group-hover:text-white group-hover:transition-down">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-          et ea rebum.
-        </p>
-      </div>
-    </div> */}
     </div>
   );
 }

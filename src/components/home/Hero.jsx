@@ -20,8 +20,8 @@ export default function Hero() {
 
         {/* btn */}
         <div className="flex flex-col lg:flex-row gap-2">
-          <SecondaryBtn>Get Started</SecondaryBtn>
-          <PrimaryBtn>Contact Us</PrimaryBtn>
+          <SecondaryBtn url="/pricing">Get Started</SecondaryBtn>
+          <PrimaryBtn url="/contact">Contact Us</PrimaryBtn>
         </div>
       </div>
     </div>

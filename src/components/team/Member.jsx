@@ -1,4 +1,5 @@
 // eslint-disable-next-line react/prop-types
+import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 export default function Member({ member }) {
   const { name, designation, img, about } = member || {};
   return (
@@ -6,6 +7,9 @@ export default function Member({ member }) {
       {/* img */}
       <div className="w-[104px] h-[138px] flex-shrink-0">
         <img className="w-[104px] h-[138px] flex-shrink-0 " src={img} alt="" />
+        <p className="flex my-2 gap-3 justify-between px-2 text-primary">
+          <BsLinkedin /> <BsInstagram /> <BsTwitter />
+        </p>
       </div>
       <div className="flex flex-col gap-3 ">
         <h4 className="uppercase text-primary text-xl font-semibold">

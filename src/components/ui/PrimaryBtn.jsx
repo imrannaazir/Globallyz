@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
+
 // eslint-disable-next-line react/prop-types
-export default function PrimaryBtn({ children }) {
+export default function PrimaryBtn({ children, url }) {
   return (
-    <button
+    <Link
+      to={url}
       className="primary-btn mt-12 px-10 py-5 relative border border-white uppercase font-semibold tracking-wider leading-none overflow-hidden text-white hover:text-primary"
       type="button"
     >
@@ -10,6 +13,6 @@ export default function PrimaryBtn({ children }) {
         {children}
       </span>
       {children}
-    </button>
+    </Link>
   );
 }
