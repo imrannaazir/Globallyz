@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
+
 // eslint-disable-next-line react/prop-types, no-unused-vars
-export default function PrimaryBtnAlt({ children, shape }) {
+export default function PrimaryBtnAlt({ children, shape, url }) {
   return (
-    <button
+    <Link
+      to={url}
       className={`primary-btn   relative border border-primary   tracking-wider leading-none overflow-hidden text-primary hover:text-white ${shape}`}
       type="button"
     >
@@ -10,6 +13,6 @@ export default function PrimaryBtnAlt({ children, shape }) {
         {children}
       </span>
       {children}
-    </button>
+    </Link>
   );
 }

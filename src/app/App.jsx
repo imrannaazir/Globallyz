@@ -12,6 +12,8 @@ import PricingOfService from "../pages/PricingOfService";
 import Package from "../pages/Package";
 import StrategicAlliancesPartnerships from "../pages/StrategicAlliancesPartnerships";
 import Testimonials from "../pages/Testimonials";
+import ViewBlog from "../pages/ViewBlog";
+import Career from "../pages/Career";
 
 const App = () => {
   const routes = [
@@ -628,6 +630,16 @@ const App = () => {
       id: 12,
       route: "/testimonials",
       component: Testimonials,
+    },
+    {
+      id: 13,
+      route: "/blog/:id",
+      component: ViewBlog,
+    },
+    {
+      id: 14,
+      route: "/career",
+      component: Career,
     },
   ];
 

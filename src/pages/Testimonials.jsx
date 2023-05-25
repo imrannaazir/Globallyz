@@ -31,7 +31,7 @@ export default function Testimonials() {
   ];
   return (
     <Layout bg_img="https://i.ibb.co/gSdb4bC/testimonials.jpg">
-      <Banner title="Testimonials" />
+      <Banner title="Clients & Testimonials" />
       <div className="max-w-screen-xl  flex-wrap   mx-auto p-4">
         {/* <div className="text-center">
           <h5 className="text-lg font-semibold text-gray-300">Our Experts</h5>

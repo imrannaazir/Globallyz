@@ -18,17 +18,22 @@ export default function Contact() {
             <div className="mt-10 flex flex-col gap-5">
               <p className="flex items-center gap-5">
                 {" "}
-                <BsEnvelopeFill className="text-4xl" /> support@epicize.com
+                <BsEnvelopeFill className="text-4xl" /> Contact@globallyz.com
               </p>
               <p className="flex items-center gap-5">
                 {" "}
                 <BsFillTelephoneFill className="text-4xl" />
-                +919876543210
+                +91-76184-20994
               </p>
-              <p className="flex items-center gap-5">
+              <a
+                href="https://www.linkedin.com/company/globallyz/"
+                target="_blank"
+                className="flex items-center gap-5"
+                rel="noreferrer"
+              >
                 <AiFillLinkedin className="text-4xl" />
                 linkedin.com
-              </p>
+              </a>
             </div>
           </div>
 

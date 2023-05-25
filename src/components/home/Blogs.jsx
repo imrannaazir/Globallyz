@@ -63,7 +63,10 @@ export default function Blogs() {
                   applications with banks and national small business lenders.
                 </p>
                 <a href="#" className="">
-                  <PrimaryBtnAlt shape="rounded-full px-6 py-3 my-2">
+                  <PrimaryBtnAlt
+                    shape="rounded-full px-6 py-3 my-2"
+                    url="/blog/1"
+                  >
                     Read More
                   </PrimaryBtnAlt>
                 </a>
@@ -123,7 +126,10 @@ export default function Blogs() {
                   applications with banks and national small business lenders.
                 </p>
                 <a href="#" className="">
-                  <PrimaryBtnAlt shape="rounded-full px-6 py-3 my-2">
+                  <PrimaryBtnAlt
+                    shape="rounded-full px-6 py-3 my-2"
+                    url="/blog/1"
+                  >
                     Read More
                   </PrimaryBtnAlt>
                 </a>
@@ -183,7 +189,10 @@ export default function Blogs() {
                   applications with banks and national small business lenders.
                 </p>
                 <a href="#" className="">
-                  <PrimaryBtnAlt shape="rounded-full px-6 py-3 my-2">
+                  <PrimaryBtnAlt
+                    shape="rounded-full px-6 py-3 my-2"
+                    url="/blog/1"
+                  >
                     Read More
                   </PrimaryBtnAlt>
                 </a>

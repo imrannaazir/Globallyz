@@ -2,7 +2,7 @@
 import Blogs from "../components/home/Blogs";
 import Hero from "../components/home/Hero";
 import Services from "../components/home/Services";
-import Testimonials from "../components/home/Testimonials";
+// import Testimonials from "../components/home/Testimonials";
 import Layout from "../components/ui/Layout";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       {/* <AboutUs /> */}
       <Services />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Blogs />
     </Layout>
   );
