@@ -3,7 +3,7 @@ import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 export default function Member({ member }) {
   const { name, designation, img, about } = member || {};
   return (
-    <div className="flex gap-10 border-b-2 pb-3 bg-white rounded-lg p-10">
+    <div className="flex gap-10 border-b-2  bg-white rounded-lg p-10">
       {/* img */}
       <div className="w-[104px] h-[138px] flex-shrink-0">
         <img className="w-[104px] h-[138px] flex-shrink-0 " src={img} alt="" />
