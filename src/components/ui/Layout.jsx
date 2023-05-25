@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import TopBar from "./Topbar";
+// import TopBar from "./Topbar";
 
 export default function Layout({ children, bg_img }) {
   return (
@@ -15,7 +15,7 @@ export default function Layout({ children, bg_img }) {
           className="object-cover object-center w-full h-full animate-zoom"
         />
       </div>
-      <TopBar />
+      {/* <TopBar /> */}
       <Navbar />
       {children}
       <Footer />

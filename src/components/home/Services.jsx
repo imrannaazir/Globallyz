@@ -75,7 +75,7 @@ export default function Services() {
           name: "After handing over to the sales  ",
           details: [
             "Collaborate with Sales on pitches/decks",
-            "Drafting and delivering Contracts/SOWs/Changes to contracts",
+            "Drafting and delivering Contracts /SOWs /Changes to contracts",
             "Collaborate with Sales on RFI/RFP/RFQs",
             " Partnership with customers after-sales",
             "Ensure delivery with delivery teams ",
@@ -197,7 +197,7 @@ export default function Services() {
     },
   ];
   return (
-    <div className="max-w-screen-xl  mx-auto p-4 grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 my-20 gap-1 gap-y-3 ">
+    <div className="  mx-auto p-4 grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 my-20 gap-1 gap-y-3 ">
       {/* cards */}
       {services.map((service) => (
         <div

@@ -118,6 +118,16 @@ export default function Navbar() {
             </li>
             <li>
               <NavLink
+                to="/testimonials"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Client & Testimonials
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/career"
                 className={({ isActive }) =>
                   isActive ? " text-primary font-semibold" : ""
