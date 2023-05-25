@@ -24,7 +24,9 @@ export default function BenefitOfDigitalMarketing({ name, url, description }) {
 
       {/* btn */}
       <div className="text-center">
-        <SecondaryBtn newClass="rounded-full">Let's Talk</SecondaryBtn>
+        <SecondaryBtn url="/contact" newClass="rounded-full">
+          Let's Talk
+        </SecondaryBtn>
       </div>
     </div>
   );
