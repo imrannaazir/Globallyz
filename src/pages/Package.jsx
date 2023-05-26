@@ -2911,7 +2911,7 @@ export default function Package() {
   return (
     <Layout bg_img="https://i.ibb.co/W64yYcK/pricing.webp">
       <Banner title={`${selectedPlan?.service} Pricing`}></Banner>
-      <div className="max-w-screen-xl  mx-auto p-4 grid grid-cols-3 gap-5 my-20 ">
+      <div className="max-w-screen-xl  mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-20 ">
         {selectedPlan?.plans?.map((plan) => (
           <div
             className={`p-5 flex flex-col justify-between gap-5 bg-${plan.color} rounded-lg shadow-lg`}

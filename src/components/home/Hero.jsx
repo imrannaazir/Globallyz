@@ -19,7 +19,7 @@ export default function Hero() {
         </p>
 
         {/* btn */}
-        <div className="flex flex-col lg:flex-row gap-2">
+        <div className="flex flex-col lg:flex-row gap-2 ">
           <SecondaryBtn url="/pricing">Get Started</SecondaryBtn>
           <PrimaryBtn url="/contact">Contact Us</PrimaryBtn>
         </div>

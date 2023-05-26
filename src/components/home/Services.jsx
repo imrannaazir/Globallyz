@@ -121,7 +121,7 @@ export default function Services() {
             "Enable organic growth by consistently managing relationships with Decision takers (for ex: D, VP, CxO)",
             " Enhance the visibility of the brand and offerings to CXO levels",
             " Provide intel and insights of customers & projects to the Sales & pre-sales  ",
-            "Offer customers with proof of concept[ts/pilot projects/consulting services",
+            "Offer customers with proof of concept[ts /pilot projects /consulting services",
           ],
         },
         {
@@ -154,9 +154,9 @@ export default function Services() {
           details: [
             "with competencies (MS Azure, AWS, Google, IBM, Salesforce, .etc)",
             "with Domain/Industry Experts  ",
-            "with Domain Entities: Agencies/Companies/Organizations/Institutes  ",
+            "with Domain Entities: Agencies /Companies /Organizations /Institutes  ",
             "with Technology/Industry Experts ",
-            "with Technology Entities: Agencies/Companies/Organizations/Institutes  ",
+            "with Technology Entities: Agencies /Companies /Organizations /Institutes  ",
           ],
         },
       ],
@@ -197,12 +197,12 @@ export default function Services() {
     },
   ];
   return (
-    <div className="  mx-auto p-4 grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 my-20 gap-1 gap-y-3 ">
+    <div className="  mx-auto p-4 grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 my-20 gap-1 gap-y-3 justify-center">
       {/* cards */}
       {services.map((service) => (
         <div
           key={service.id}
-          className={` px-5 shadow-lg max-w-[400px] rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ${service.color} bg-opacity-70`}
+          className={` px-5 shadow-lg max-w-sm rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ${service.color} bg-opacity-70 `}
         >
           <Link to={service.route}>
             <service.icon className="absolute right-5 top-5 text-5xl text-primary/40 group-hover:text-white group-hover:transition-up" />

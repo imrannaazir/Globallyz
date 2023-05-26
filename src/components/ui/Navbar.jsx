@@ -32,20 +32,17 @@ export default function Navbar() {
               className="h-12 mr-3 rounded-full"
               alt="Globallyz logo"
             />
-            {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-primary font-[cursive]">
-              Globallyz 
-            </span>*/}
           </Link>
 
           {/*toggle button  */}
           <div
             onClick={() => setIsOpen(!isOpen)}
-            className={`text-2xl md:hidden cursor-pointer`}
+            className={`text-2xl xl:hidden cursor-pointer`}
           >
             {isOpen ? <BiX /> : <HiBars3BottomRight />}
           </div>
 
-          <ul className="hidden md:flex gap-5 text-sm ">
+          <ul className="hidden xl:flex gap-3 text-sm ">
             <li>
               <NavLink
                 to="/marketing-service"
@@ -168,8 +165,9 @@ export default function Navbar() {
               </div>
             </li>
           </ul>
+
           <ul
-            className={`flex flex-col gap-5 text-sm absolute top-16 bg-white p-5 w-full  left-0 md:hidden duration-200 ${
+            className={`flex flex-col gap-5 text-sm absolute top-16 bg-white p-5 w-full  left-0 xl:hidden duration-200 ${
               isOpen ? "" : "hidden"
             }`}
           >
@@ -225,7 +223,7 @@ export default function Navbar() {
             </li>
             <li>
               <NavLink
-                to="/delight-service"
+                to="/strategic-alliances-partnerships-service"
                 className={({ isActive }) =>
                   isActive ? " text-primary font-semibold" : ""
                 }
@@ -243,6 +241,26 @@ export default function Navbar() {
                 Pricing
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/testimonials"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Client & Testimonials
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/career"
+                className={({ isActive }) =>
+                  isActive ? " text-primary font-semibold" : ""
+                }
+              >
+                Careers
+              </NavLink>
+            </li>
             <li className="group">
               <span className="flex items-center gap-1">
                 About <FaAngleDown />{" "}
@@ -250,7 +268,7 @@ export default function Navbar() {
               <div
                 className={`absolute hidden group-hover:block z-10  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 p-5`}
               >
-                <ul className="py-2 text-sm text-gray-700 flex flex-col gap-3 ">
+                <ul className="py-2 text-sm text-gray-700 flex flex-col gap-3">
                   <li>
                     <NavLink
                       to="/contact"

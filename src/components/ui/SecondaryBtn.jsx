@@ -5,7 +5,7 @@ export default function SecondaryBtn({ children, newClass, url }) {
   return (
     <Link
       to={url}
-      className={`mt-12 px-10 py-4 uppercase font-semibold bg-primary text-white hover:bg-primary/80 transition duration-300 ${newClass}`}
+      className={`mt-12 px-10 py-4 uppercase font-semibold bg-primary text-white hover:bg-primary/80 transition duration-300 ${newClass} max-w-[194px]`}
       href="#"
     >
       {children}

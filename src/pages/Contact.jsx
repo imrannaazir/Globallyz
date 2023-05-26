@@ -10,8 +10,8 @@ export default function Contact() {
       <Banner title="Contact Us" />
       {/* contact us */}
       <div className="contact-us ">
-        <div className="max-w-screen-xl mx-auto p-4 flex ">
-          <div className="contact-bg-color w-[30%] p-10 text-white">
+        <div className="max-w-screen-xl mx-auto p-4 flex flex-col lg:flex-row">
+          <div className="contact-bg-color lg:w-[30%] p-10 text-white">
             <h3 className="uppercase text-[2rem]">Contact US</h3>
             <div className="h-[2px] w-[80px] -bottom-4 left-0 bg-white "></div>
 

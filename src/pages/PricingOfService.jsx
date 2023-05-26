@@ -274,7 +274,7 @@ export default function PricingOfService() {
     <Layout bg_img="https://i.ibb.co/W64yYcK/pricing.webp">
       <Banner title={`${selectedService?.name} Service pricing`} />
       <div className="  py-10">
-        <div className="max-w-screen-xl  mx-auto p-4 grid grid-cols-4 gap-5">
+        <div className="max-w-screen-xl  mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {selectedService.services.map((pricing) => (
             <Link
               to={`/pricing/${name

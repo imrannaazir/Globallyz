@@ -1,11 +1,15 @@
+/* eslint-disable react/prop-types */
 import RelatedPostCard from "./RelatedPostCard";
 
-export default function RelatedPostContainer() {
+// eslint-disable-next-line react/prop-types
+export default function RelatedPostContainer({ relatedBlogs }) {
   return (
-    <aside className="w-[40%]">
+    <aside className="lg:w-[40%]">
       <h4 className="mb-4 text-xl font-medium text-white">Related Posts</h4>
       <div className="space-y-4 related-post-container">
-        <RelatedPostCard />
+        {relatedBlogs?.map((blog) => (
+          <RelatedPostCard key={blog?.id} blog={blog} />
+        ))}
       </div>
     </aside>
   );

@@ -46,7 +46,7 @@ export default function ServicePricing() {
     },
   ];
   return (
-    <div className="max-w-screen-xl  mx-auto p-4 grid grid-cols-6 gap-3 my-20">
+    <div className="max-w-screen-xl  mx-auto p-4 grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 my-20">
       {services.map((service) => (
         <Link
           to={`/pricing/${service.name

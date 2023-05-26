@@ -18,7 +18,7 @@ export default function ProvidingServices({ name, services }) {
             Profitability
           </p>
         </div>
-        <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mt-20 gap-5 ">
+        <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mt-20 gap-5 justify-center">
           {/* card 1 */}
           {services.map((service) => (
             <div
