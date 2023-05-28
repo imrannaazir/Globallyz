@@ -208,7 +208,7 @@ export default function Services() {
             <service.icon className="absolute right-5 top-5 text-5xl text-primary/40 group-hover:text-white group-hover:transition-up" />
             <div className="my-5">
               <div className="mb-9">
-                <h1 className="text-2xl  relative mb-3 text-primary group-hover:text-white group-hover:transition-up">
+                <h1 className="text-2xl  relative mb-3 text-primary group-hover:text-white group-hover:transition-up w-[70%]">
                   {service.name}
                 </h1>
                 <div className="h-[2px] w-[50px] -bottom-4 left-0 bg-primary group-hover:bg-white group-hover:transition-up"></div>
@@ -240,7 +240,7 @@ export default function Services() {
             <a
               href={service?.link?.url}
               target="_blank"
-              className="border-2 px-6 py-3 border-black 
+              className="border-2 px-6 py-3 bg-primary text-white 
                   absolute z-30 group-hover:transition-up group-hover:border-white group-hover:text-white"
               rel="noreferrer"
             >

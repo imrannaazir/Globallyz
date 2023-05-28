@@ -187,13 +187,13 @@ const App = () => {
       services: [
         {
           id: 1,
-          name: "Conductong competitor research",
+          name: "Conducting Competitor Research",
           details:
             "Our competitor research service provides valuable insights into your industry landscape. We analyze competitors' strategies, strengths, and weaknesses to help you gain a competitive edge. By identifying market trends and understanding their positioning, we equip you with actionable intelligence for informed decision-making. Stay one step ahead with our competitor research service, and outmaneuver your rivals in the dynamic marketplace.",
         },
         {
           id: 2,
-          name: "Conduction customer analysis",
+          name: "Conduction Customer Analysis",
           details:
             "Our customer analysis service delves deep into understanding your target audience. By analyzing demographic, psychographic, and behavioral data, we gain valuable insights into their preferences and needs. This allows us to tailor your marketing strategies and offerings to effectively engage and convert customers. With customer analysis, we empower you to make data-driven decisions that drive customer satisfaction and loyalty, resulting in business growth.",
         },
@@ -205,7 +205,7 @@ const App = () => {
         },
         {
           id: 4,
-          name: "Qualifying leads	",
+          name: "Qualifying Leads	",
           details: "",
         },
         {
@@ -216,61 +216,61 @@ const App = () => {
         },
         {
           id: 6,
-          name: "Making discovery calls",
+          name: "Making Discovery Calls",
           details:
             "Our discovery calls service helps you uncover valuable insights about potential customers. We engage in meaningful conversations to understand their needs, pain points, and goals. Through active listening and probing questions, we gather critical information that allows you to tailor your solutions to their specific requirements. Experience the power of our discovery calls service in building rapport, qualifying leads, and increasing conversion rates.",
         },
         {
           id: 7,
-          name: "Performing product demos	",
+          name: "Performing Product Demos	",
           details:
             "Our product demo service showcases the value and functionality of your offerings to potential customers. We deliver engaging and informative presentations that highlight the unique features and benefits of your products. By demonstrating how your solutions can solve their challenges and meet their needs, we create a compelling case for purchase. Experience the power of our product demo service in captivating your audience and driving increased interest and sales conversions.",
         },
         {
           id: 8,
-          name: "Drafting and delivering proposals",
+          name: "Drafting and Delivering Proposals",
           details:
             "Our proposal drafting and delivery service creates compelling and persuasive proposals that win over potential clients. We carefully craft customized proposals that clearly communicate your value proposition and address their specific needs. With our expertise in proposal writing, we help you stand out from the competition and increase your chances of securing lucrative deals. Experience the power of our proposal service in impressing clients and driving successful business partnerships.",
         },
         {
           id: 9,
-          name: "Enable slaes team with quaified leads	",
+          name: "Enable Sales team with QuaLified Leads	",
           details:
             "Our service enables your sales team with a steady stream of qualified leads. We employ rigorous lead qualification processes to identify prospects who are most likely to convert. By providing your sales team with high-quality leads, we ensure they can focus their efforts on engaging and closing deals rather than wasting time on unqualified prospects. Experience the power of our lead enablement service in driving sales productivity and boosting revenue growth.",
         },
         {
           id: 10,
-          name: "Handover leads to sales	",
+          name: "Handover Leads to Sales	",
           details:
             "Our lead handover service ensures a seamless transition from marketing to sales. We carefully transfer qualified leads to your sales team, providing them with all the necessary information and context to effectively engage prospects. By facilitating a smooth handover process, we optimize collaboration between marketing and sales, increasing conversion rates and accelerating the sales cycle. Experience the power of our lead handover service in streamlining your sales operations and driving revenue growth.",
         },
         {
           id: 11,
-          name: "Do pilots/proof of concepts	",
+          name: "Do Pilots/Proof of Concepts	",
           details:
             "Our pilot/proof of concept service allows you to validate the feasibility and effectiveness of your solutions before full-scale implementation. We design and execute small-scale trials that demonstrate the value and impact of your offerings. By conducting pilots or proof of concepts, we minimize risks, gather valuable feedback, and refine your products or services for optimal performance. Experience the power of our pilot/proof of concept service in mitigating uncertainties and ensuring successful deployments.",
         },
         {
           id: 12,
-          name: "prepare sales pitches/decks	",
+          name: "Prepare Sales Pitches/Decks	",
           details:
             "Our sales pitch and deck preparation service crafts compelling presentations that captivate and persuade your audience. We leverage our expertise in storytelling, design, and persuasive communication to create visually appealing and impactful sales pitches. By delivering key messages effectively and showcasing the unique value of your offerings, we help you make a lasting impression and win over potential clients. Experience the power of our sales pitch service in driving engagement, building credibility, and closing deals.",
         },
         {
           id: 13,
-          name: "Drafting and delivering Contracts/SOWs/Changes to contracts",
+          name: "Drafting and Delivering Contracts/SOWs/Changes to Contracts",
           details:
             "Our contract drafting and delivery service ensures accurate and professional documentation for your business agreements. We meticulously draft contracts, statements of work (SOWs), and handle changes to existing contracts. With our expertise in legal and contractual matters, we ensure clarity, compliance, and protection of your interests. Experience the convenience and peace of mind that our contract service offers, ensuring smooth business transactions and mitigating potential disputes.",
         },
         {
           id: 14,
-          name: "after sale partnership with customer until the implementation is successfull",
+          name: "After Sale Partnership with Customer until the Implementation is Successful",
           details:
             "Our post-sale partnership service is dedicated to your success beyond the initial transaction. We provide ongoing support and guidance to ensure a smooth implementation of our solutions. Our team works closely with you, addressing any challenges that arise and providing personalized assistance to maximize the value of our offerings. Experience the peace of mind that comes with our commitment to your long-term success, as we continue to support your business even after the sale is complete.",
         },
         {
           id: 15,
-          name: "address challenges between the customers ad the delivery	",
+          name: "Address Challenges between the Customers ad the Delivery	",
           details:
             "Our service specializes in addressing challenges that may arise between customers and the delivery process. We proactively identify and resolve issues, ensuring smooth communication and customer satisfaction. By acting as a bridge between both parties, we strive to maintain strong relationships and overcome obstacles, fostering a positive and collaborative environment. Experience the effectiveness of our solution-oriented approach in minimizing disruptions and optimizing the delivery experience for all stakeholders involved.",
         },
@@ -316,67 +316,67 @@ const App = () => {
       services: [
         {
           id: 1,
-          name: "Persuade leads to Cutomer coversion	",
+          name: "Persuade Leads to Customer Conversations	",
           details:
             "Our service excels in persuading leads to convert into satisfied customers. Through effective communication, personalized approach, and showcasing the unique value of your offerings, we influence prospects to make a purchasing decision. By addressing their needs and demonstrating how your solution meets their requirements, we create a compelling case for conversion. Experience the power of our lead conversion service in driving revenue growth and building a loyal customer base.",
         },
         {
           id: 2,
-          name: "In-person meets	",
+          name: "In-person Meets	",
           details:
             "Our service facilitates impactful in-person meetings with potential clients. We believe in the power of face-to-face interactions to build rapport, establish trust, and better understand their needs. By engaging in personalized discussions and presentations, we create a memorable experience that leaves a lasting impression. Experience the effectiveness of our in-person meet service in forging meaningful connections, enhancing customer relationships, and increasing the likelihood of successful business partnerships.",
         },
         {
           id: 3,
-          name: "email/call follow ups	",
+          name: "Email/Call Follow-ups	",
           details:
             "Our email/call follow-up service ensures consistent and timely communication with leads. We understand the importance of nurturing relationships and keeping prospects engaged throughout the sales process. By sending well-crafted emails and making strategic follow-up calls, we reinforce your value proposition, address any concerns, and move prospects closer to conversion. Experience the effectiveness of our follow-up service in staying top-of-mind, building trust, and increasing the likelihood of successful sales conversions.",
         },
         {
           id: 4,
-          name: "relatiosnhip events	",
+          name: "Relationship Events	",
           details:
             "Our service organizes relationship events to foster meaningful connections between your business and potential clients. These events provide a platform for networking, knowledge sharing, and building trust. By creating a relaxed and engaging environment, we facilitate valuable interactions that can lead to long-term partnerships. Experience the impact of our relationship events in strengthening relationships, expanding your network, and generating new business opportunities.",
         },
         {
           id: 5,
-          name: "provide testimonials	",
+          name: "Provide Testimonials	",
           details:
             "Our service includes providing impactful testimonials that highlight the positive experiences of your satisfied customers. These testimonials serve as powerful social proof, instilling confidence in potential clients and reinforcing the credibility of your offerings. By showcasing real-life success stories, we create trust and encourage prospects to choose your products or services. Experience the persuasive power of our testimonial service in driving conversions and building a strong reputation in the market.",
         },
         {
           id: 6,
-          name: "know the heirarchy and customer potential	",
+          name: "know the Hierarchy and Customer Potential	",
           details:
             "Our service focuses on understanding the hierarchy and potential of your customers. By conducting thorough research and analysis, we identify key decision-makers within organizations and evaluate the potential value they bring to your business. This knowledge allows us to tailor our approach, prioritize engagements, and allocate resources effectively. Experience the benefits of our customer profiling service in optimizing sales efforts, enhancing customer targeting, and maximizing revenue generation opportunities.",
         },
         {
           id: 7,
-          name: "Negotiation and closing - sales job	",
+          name: "Negotiation and Closing - Sales Job	",
           details:
             "Our service specializes in negotiation and closing deals, ensuring a seamless sales process. With our expertise in sales strategies and effective communication, we navigate the negotiation phase with confidence, addressing objections and finding mutually beneficial solutions. We guide prospects towards a successful closing, securing agreements that meet your objectives. Experience the power of our sales job service in maximizing deal conversions, generating revenue, and achieving your business goals.",
         },
         {
           id: 8,
-          name: "Prep sign SOWs/Contracts	",
+          name: "Prep Sign SOWs/Contracts	",
           details:
             "Our service takes care of preparing and finalizing Statements of Work (SOWs) and contracts. With meticulous attention to detail, we ensure that all necessary legal and commercial aspects are covered. Our experts will guide you through the process, providing valuable insights and recommendations. Experience the convenience and peace of mind that comes with our SOW and contract preparation service, allowing you to focus on driving business growth while we handle the paperwork.",
         },
         {
           id: 9,
-          name: "Introduce & establish  Account Managers	",
+          name: "Introduce & Establish  Account Managers	",
           details:
             "Our service includes introducing and establishing dedicated Account Managers who will be your trusted partners in managing customer relationships. These skilled professionals act as a single point of contact, ensuring proactive support, addressing concerns, and identifying opportunities for growth. With their expertise and personalized approach, they will navigate the complexities of customer management, fostering long-term loyalty and maximizing customer satisfaction. Experience the benefits of our Account Manager service in driving customer success and building strong, lasting partnerships.",
         },
         {
           id: 10,
-          name: "on and off gauge the implementation success/failure	",
+          name: "On and off Gauge the Implementation Success/Failure	",
           details:
             "Our service continuously monitors and evaluates the success or failure of the implementation process. By closely tracking key performance indicators and gathering feedback, we ensure that your solutions are effectively integrated and meeting the desired outcomes. Our team makes timely adjustments and provides support to address any challenges that may arise. Experience the value of our implementation monitoring service in optimizing the deployment of your solutions and ensuring a successful outcome for your business.",
         },
         {
           id: 11,
-          name: "Identify Strategic parterships 	",
+          name: "Identify Strategic Partnerships 	",
           details:
             "Our service specializes in identifying and cultivating strategic partnerships for your business. Through extensive market research and analysis, we identify potential partners who align with your goals and values. We facilitate collaborations that leverage complementary strengths, expand market reach, and drive mutual growth. Experience the benefits of our strategic partnership service in accessing new opportunities, gaining competitive advantage, and fostering long-term business relationships that propel your success.",
         },
@@ -388,13 +388,13 @@ const App = () => {
         },
         {
           id: 13,
-          name: "Insights to Prodcut team	",
+          name: "Insights to Product Team	",
           details:
             "Our service provides valuable insights to your product team, contributing to the development and enhancement of your offerings. By gathering feedback, analyzing market trends, and identifying customer needs, we provide actionable insights that drive innovation and product refinement. Experience the advantage of our service in ensuring your products stay competitive, resonate with the market, and meet the evolving demands of your customers.",
         },
         {
           id: 14,
-          name: "Course correction to Pre-sales	",
+          name: "Course Correction to Pre-sales	",
           details:
             "Our service offers course correction to your pre-sales efforts, ensuring optimal performance and outcomes. Through thorough analysis and evaluation, we identify areas for improvement, refine strategies, and implement necessary adjustments. Our expert team provides guidance and support, enabling your pre-sales activities to align with your business objectives. Experience the value of our course correction service in maximizing the effectiveness of your pre-sales efforts and driving better results for your organization.",
         },
@@ -443,7 +443,7 @@ const App = () => {
       services: [
         {
           id: 1,
-          name: "Customer relationship manager",
+          name: "Customer Relationship Manager",
           details: "",
         },
         {
@@ -454,25 +454,25 @@ const App = () => {
         },
         {
           id: 3,
-          name: "Enable organic growth (refer Delight)	",
+          name: "Enable Organic Growth (Refer Delight)	",
           details:
             "Our Enable Organic Growth service aims to foster customer delight and drive organic growth for your business. By consistently exceeding customer expectations and delivering exceptional experiences, we create a loyal customer base that generates positive word-of-mouth referrals. Through personalized interactions and value-added services, we nurture long-term relationships and encourage repeat business. Our focus on customer delight enables your business to grow organically, with satisfied customers becoming brand advocates who promote your offerings to others. Experience the power of organic growth through our specialized service and unlock new opportunities for your business.",
         },
         {
           id: 4,
-          name: "Consistantly enrich customer relationships 	",
+          name: "Consistently Enrich Customer Relationships 	",
           details:
             "Our 'Consistently Enrich Customer Relationships' service is dedicated to nurturing strong and lasting connections with your customers. Through proactive engagement, personalized communication, and attentive support, we ensure that each interaction adds value and strengthens the customer relationship. By understanding their needs and preferences, we tailor our approach to provide a personalized experience that fosters loyalty and satisfaction. Our commitment to consistently enriching customer relationships sets the foundation for long-term success and maximizes customer lifetime value. Trust us to go above and beyond in nurturing meaningful connections with your customers.",
         },
         {
           id: 5,
-          name: "constantly manage relationships with decision makers and influencers	",
+          name: "Constantly Manage Relationships with Decision Makers and Influencer	",
           details:
             "Our service of 'Constantly Managing Relationships with Decision Makers and Influencers' focuses on maintaining strong connections with key decision makers and influencers in your industry. Through regular communication, personalized outreach, and strategic engagement, we ensure that your brand remains top-of-mind and influential within the target market. By understanding their needs and priorities, we build trust and credibility, positioning your business for strategic partnerships and opportunities. With our dedicated approach to relationship management, we help you forge valuable connections that drive growth and success in your industry.",
         },
         {
           id: 6,
-          name: "provide intel and insights of customers & projects to the Sales & pre-sales 	",
+          name: "Provide Intel and Insights of Customers & Projects to the Sales & Pre-sales 	",
           details:
             "Our service of 'Providing Intel and Insights of Customers & Projects to the Sales & Pre-sales' is aimed at empowering your sales and pre-sales teams with valuable information and data. We gather intel on customer preferences, behaviors, and market trends, providing actionable insights that enhance decision-making processes. By sharing comprehensive project information and customer analytics, we enable your teams to tailor their strategies, pitch effectively, and drive successful outcomes. With our intel and insights, your sales and pre-sales teams can make informed decisions, optimize their approach, and maximize conversion rates. Count on us to provide the necessary knowledge and data for your teams to excel in their roles.",
         },
@@ -532,13 +532,13 @@ const App = () => {
         },
         {
           id: 5,
-          name: "Agile methodology	",
+          name: "Agile Methodology	",
           details:
             "Our 'Agile methodology' service embraces flexibility, adaptability, and collaboration to drive project success. We adopt agile principles and practices, allowing us to respond to changes, incorporate feedback, and continuously improve throughout the project lifecycle. By embracing an iterative and collaborative approach, we ensure that your project stays on track, delivers value incrementally, and adapts to evolving requirements. Our agile methodology empowers us to deliver high-quality results efficiently while fostering transparency and collaboration with your team.",
         },
         {
           id: 6,
-          name: "Resource management	",
+          name: "Resource Management	",
           details:
             "Our 'Resource management' service focuses on optimizing the allocation and utilization of resources to maximize project efficiency and effectiveness. We carefully analyze and assess the availability and skills of our resources, ensuring they are aligned with project requirements. By effectively managing resources, we minimize wastage, enhance productivity, and maintain a smooth workflow. Our dedicated approach to resource management enables us to deliver projects within budget, on schedule, and with the right expertise, ensuring optimal utilization of resources for your project's success.",
         },
@@ -558,19 +558,19 @@ const App = () => {
       faqs: [
         {
           id: 1,
-          question: " How do you ensure timely delivery of projects?",
+          question: " How do you Ensure Timely Delivery of Projects?",
           ans: "We follow a structured project management approach that includes detailed planning, resource allocation, and regular monitoring. Our team closely tracks project milestones and progress, making adjustments as needed to ensure on-time delivery. We prioritize effective communication, keeping clients informed of project status and promptly addressing any potential delays.",
         },
         {
           id: 2,
           question:
-            "How do you handle scope changes during the delivery process?",
+            "How do you Handle Scope Changes During the Delivery Process?",
           ans: "We understand that project requirements may evolve over time. Our delivery service includes a robust change management process. We carefully evaluate scope changes, considering their impact on timelines, resources, and overall project objectives. By collaborating with clients and stakeholders, we effectively manage scope changes, ensuring that they are properly assessed, documented, and integrated into the project plan.",
         },
         {
           id: 3,
           question:
-            "What measures do you take to maintain quality in project delivery?",
+            "What Measures do you Take to Maintain Quality in Project Delivery?",
           ans: " Quality is a top priority for us. We have rigorous quality control processes in place throughout the project lifecycle. Our team adheres to industry best practices, quality standards, and relevant regulations. We conduct regular quality audits, perform thorough testing and validation, and leverage feedback loops to continuously improve our delivery processes. By focusing on quality at every step, we strive to exceed client expectations and deliver exceptional results.",
         },
       ],
