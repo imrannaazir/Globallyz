@@ -1,6 +1,7 @@
 /* 
-make aside -
-1. core team , executive team , content marketing tools/ tecnologiesw use 
+content marketing team
+
+1. name : Sneha (Marketing Ex) , bobbly(Video Spe) , Shivani(Writer), Shanul(Writer), Nikhil(Writer), Aastha Tandon(Content Marketing Intern) ,
 
 
 */
