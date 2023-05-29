@@ -14,6 +14,10 @@ import StrategicAlliancesPartnerships from "../pages/StrategicAlliancesPartnersh
 import Testimonials from "../pages/Testimonials";
 import ViewBlog from "../pages/ViewBlog";
 import Career from "../pages/Career";
+import CoreTeam from "../components/team/CoreTeam";
+import ExecutiveTeam from "../components/team/ExecutiveTeam";
+import ContentMarketingTeam from "../components/team/ContentMarketingTeam";
+import ToolsTechnologies from "../components/team/ToolsTechnologies";
 
 const App = () => {
   const routes = [
@@ -31,6 +35,28 @@ const App = () => {
       id: 3,
       route: "/team",
       component: Team,
+      sub_routes: [
+        {
+          id: 1,
+          component: CoreTeam,
+          route: "core-team",
+        },
+        {
+          id: 2,
+          component: ExecutiveTeam,
+          route: "executive-team",
+        },
+        {
+          id: 3,
+          component: ContentMarketingTeam,
+          route: "content-marketing-team",
+        },
+        {
+          id: 4,
+          component: ToolsTechnologies,
+          route: "tools-technologies",
+        },
+      ],
     },
     {
       id: 4,
@@ -650,7 +676,15 @@ const App = () => {
           key={route.id}
           path={route.route}
           element={<route.component service={route} />}
-        />
+        >
+          {route?.sub_routes?.map((route) => (
+            <Route
+              key={route?.id}
+              path={route?.route}
+              Component={route?.component}
+            />
+          ))}
+        </Route>
       ))}
     </Routes>
   );

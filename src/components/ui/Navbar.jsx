@@ -23,7 +23,7 @@ export default function Navbar() {
       <nav
         className={`${
           scrolling ? " bg-white/70" : "bg-white transition-down"
-        }  border-gray-200 dark:bg-gray-900 sticky top-0  z-40 shadow-md `}
+        }  border-gray-200  sticky top-0  z-40 shadow-md `}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-center">
