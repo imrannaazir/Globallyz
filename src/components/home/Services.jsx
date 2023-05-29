@@ -192,7 +192,7 @@ export default function Services() {
       ],
       link: {
         url: "http://dilizent.com/",
-        link_title: "Dilizent",
+        link_title: "DiliZent",
       },
     },
   ];
