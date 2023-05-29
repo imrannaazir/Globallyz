@@ -153,7 +153,7 @@ export default function Navbar() {
                   </li>
                   <li>
                     <NavLink
-                      to="/team"
+                      to="/team/core-team"
                       className={({ isActive }) =>
                         isActive ? " text-primary font-semibold" : ""
                       }
