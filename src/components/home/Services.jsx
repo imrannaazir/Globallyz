@@ -137,7 +137,7 @@ export default function Services() {
             "Be accountable for the Business portfolios  ",
           ],
         },
-        {
+        /* {
           id: 3,
           name: "Delivery   ",
           details: [
@@ -158,7 +158,7 @@ export default function Services() {
             "with Technology/Industry Experts ",
             "with Technology Entities: Agencies /Companies /Organizations /Institutes  ",
           ],
-        },
+        }, */
       ],
     },
     {
@@ -189,6 +189,8 @@ export default function Services() {
         "Resource management	",
         "Accountability	",
         "Handshake with Account Management	",
+        "Up-Sell  ",
+        "Cross-Sell ",
       ],
       link: {
         url: "http://dilizent.com/",

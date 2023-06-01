@@ -8,7 +8,7 @@ export default function CollapsedTableBody({ service }) {
     <>
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className="p-4 flex justify-between bg-base-100 w-full shadow-lg cursor-pointer"
+        className="p-4 flex justify-between bg-base-100 w-full shadow-lg cursor-pointer mt-1 font-semibold"
       >
         <h3>{service?.name}</h3>
         {!isOpen ? <BiPlus /> : <BiMinus />}
