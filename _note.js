@@ -1,7 +1,9 @@
 /* 
-content marketing team
+1. delivery will be last one 
+2. remove from 
 
-1. name : Sneha (Marketing Ex) , bobbly(Video Spe) , Shivani(Writer), Shanul(Writer), Nikhil(Writer), Aastha Tandon(Content Marketing Intern) ,
+in delivery heading dilizent 
+in delivery up sell and cross sell
 
 
 */

@@ -40,7 +40,7 @@ export default function ExecutiveTeam() {
       name: "Imran Naazir ",
       designation: "Full Stack Web Developer",
       about:
-        "A talented Digital Marketing Executive with a strong command of various digital platforms and strategies. With a passion for staying ahead of digital trends, he excels at creating and implementing effective marketing campaigns that drive online visibility and engagement. Sambhrant's analytical mindset and results-driven approach make him a valuable asset in the field of digital marketing.",
+        "Passionate MERN stack developer with expertise in building robust web applications. Skilled in React.js, Node.js, and MongoDB. Committed to delivering high-quality code and enhancing user experiences. Constantly learning and staying updated with the latest web technologies. Strong problem-solving and collaboration skills. Ready to tackle new challenges and contribute to innovative projects.",
       img: "https://pbs.twimg.com/profile_images/1634609501323284480/DTqAbYru_400x400.jpg",
     },
     {
