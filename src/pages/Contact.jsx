@@ -1,8 +1,8 @@
 import { BsEnvelopeFill, BsFillTelephoneFill } from "react-icons/bs";
 import Banner from "../components/general/Banner";
 import Layout from "../components/ui/Layout";
-import PrimaryBtnAlt from "../components/ui/PrimaryBtnAlt";
 import { AiFillLinkedin } from "react-icons/ai";
+import ContactForm from "../components/contact/ContactForm";
 
 export default function Contact() {
   return (
@@ -42,69 +42,7 @@ export default function Contact() {
               <h1 className="text-[1.7rem]">Send Us A Message</h1>
             </div>
 
-            <form className="flex flex-col gap-5">
-              <div className="grid grid-cols-2 gap-5">
-                <div>
-                  <input
-                    className="input-style"
-                    required
-                    placeholder="first name"
-                    type="text"
-                    name=""
-                    id=""
-                  />
-                </div>
-                <div>
-                  <input
-                    className="input-style"
-                    required
-                    placeholder="last name"
-                    type="text"
-                    name=""
-                    id=""
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-5">
-                <div>
-                  <input
-                    className="input-style"
-                    required
-                    placeholder="E-mail"
-                    type="email"
-                    name=""
-                    id=""
-                  />
-                </div>
-                <div>
-                  <input
-                    className="input-style"
-                    required
-                    placeholder="phone"
-                    type="tel"
-                    name=""
-                    id=""
-                  />
-                </div>
-              </div>
-              <div>
-                <textarea
-                  className="input-style"
-                  required
-                  name=""
-                  placeholder="write your message"
-                  id=""
-                  cols="30"
-                  rows="1"
-                ></textarea>
-              </div>
-              <div className="text-end">
-                <PrimaryBtnAlt shape="rounded-full px-6 py-3 my-2">
-                  Send Message
-                </PrimaryBtnAlt>
-              </div>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </div>

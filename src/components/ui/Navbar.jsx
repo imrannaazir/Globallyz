@@ -1,8 +1,10 @@
+import { ToastContainer } from "react-toastify";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { FaAngleDown } from "react-icons/fa";
 import { BiX } from "react-icons/bi";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -152,6 +154,8 @@ export default function Navbar() {
           scrolling ? " bg-white/70" : "bg-white transition-down"
         }  border-gray-200  sticky top-0  z-40 shadow-md `}
       >
+        {/* toast */}
+        <ToastContainer />
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-center">
             <img
