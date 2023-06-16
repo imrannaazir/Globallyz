@@ -1,5 +1,6 @@
 // import AboutUs from "../components/home/AboutUs";
 import Blogs from "../components/home/Blogs";
+import Contact from "../components/home/Contact";
 import Hero from "../components/home/Hero";
 import Services from "../components/home/Services";
 // import Testimonials from "../components/home/Testimonials";
@@ -13,6 +14,7 @@ export default function Home() {
       <Services />
       {/* <Testimonials /> */}
       <Blogs />
+      <Contact />
     </Layout>
   );
 }

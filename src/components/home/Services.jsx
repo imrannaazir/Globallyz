@@ -205,8 +205,8 @@ export default function Services() {
             p-4
             grid
             lg:grid-cols-3
-            md:grid-cols-3
-            sm:grid-cols-2
+            md:grid-cols-2
+            sm:grid-cols-1
             my-20
             gap-5
             justify-center
