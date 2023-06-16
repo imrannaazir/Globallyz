@@ -8,8 +8,8 @@ import Layout from "../components/ui/Layout";
 export default function PreSalesService({ service }) {
   const { name, description, services, faqs } = service || {};
   return (
-    <Layout bg_img="https://i.ibb.co/2PdFrxR/presales.webp">
-      <Banner title={name} />
+    <Layout>
+      <Banner title={name} bg_img="https://i.ibb.co/2PdFrxR/presales.webp" />
       <BenefitOfDigitalMarketing
         name={name}
         description={description}

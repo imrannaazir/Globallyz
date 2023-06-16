@@ -10,7 +10,8 @@ export default {
       colors: {
         // Example of customizing colors
         primary: '#1A45B0',
-        secondary: "#00d564"
+        secondary: "#00d564",
+        base: "#fff"
       },
       fontFamily: {
         // Example of customizing fonts

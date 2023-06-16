@@ -4,8 +4,11 @@ import Layout from "../components/ui/Layout";
 
 export default function Pricing() {
   return (
-    <Layout bg_img="https://i.ibb.co/W64yYcK/pricing.webp">
-      <Banner title="Service Pricing" />
+    <Layout>
+      <Banner
+        title="Service Pricing"
+        bg_img="https://i.ibb.co/W64yYcK/pricing.webp"
+      />
       <ServicePricing />
     </Layout>
   );

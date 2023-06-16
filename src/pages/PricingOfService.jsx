@@ -466,8 +466,11 @@ export default function PricingOfService() {
       name.toLowerCase().trim().replace(/\s+/g, "-")
   );
   return (
-    <Layout bg_img="https://i.ibb.co/W64yYcK/pricing.webp">
-      <Banner title={`${selectedService?.name} Service pricing`} />
+    <Layout>
+      <Banner
+        title={`${selectedService?.name} Service pricing`}
+        bg_img="https://i.ibb.co/W64yYcK/pricing.webp"
+      />
       <div className="  py-10">
         <div className="overflow-x-auto bg-base-200 max-w-screen-xl  mx-auto p-4">
           <table className="table">

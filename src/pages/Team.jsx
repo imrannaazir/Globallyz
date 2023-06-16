@@ -4,8 +4,8 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export default function Team() {
   return (
-    <Layout bg_img="https://i.ibb.co/s12vqhs/team.webp">
-      <Banner title="Our Team" />
+    <Layout>
+      <Banner title="Our Team" bg_img="https://i.ibb.co/s12vqhs/team.webp" />
       <div className="max-w-screen-xl  flex-wrap   mx-auto p-4">
         {/*  <div className="text-center">
           <h5 className="text-lg font-semibold text-gray-300">Our Experts</h5>

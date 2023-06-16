@@ -6,14 +6,12 @@ export default function ProvidingServices({ name, services }) {
   // all digital services
 
   return (
-    <div className="bg-primary/10 py-6">
+    <div className=" py-6">
       <div className="max-w-screen-xl  mx-auto px-4 ">
         {/*  */}
         <div className="text-center">
-          <h2 className="text-[2rem] font-semibold text-white">
-            Globallyz’s {name}
-          </h2>
-          <p className="text-lg text-gray-300 tracking-wide">
+          <h2 className="text-[2rem] font-semibold ">Globallyz’s {name}</h2>
+          <p className="text-lg text-gray-500 tracking-wide">
             Build Brand Recognition as an Industry Leader and Increase
             Profitability
           </p>

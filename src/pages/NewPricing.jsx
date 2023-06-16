@@ -4,7 +4,10 @@ import Layout from "../components/ui/Layout";
 export default function NewPricing() {
   return (
     <Layout>
-      <Banner title="Pricing" />
+      <Banner
+        title="Pricing"
+        bg_img="https://i.ibb.co/ZVkpZRT/Digital-marketing.webp"
+      />
       <div className="overflow-x-auto">
         <table className="table">
           {/* head */}

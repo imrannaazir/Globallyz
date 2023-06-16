@@ -8,6 +8,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  /*   
   const [scrolling, setScrolling] = useState(true);
 
   // handle header bg by scrolling
@@ -18,141 +20,137 @@ export default function Navbar() {
       setScrolling(true);
     }
   };
-  window.addEventListener("scroll", handleNavBg);
+  window.addEventListener("scroll", handleNavBg); */
+
+  const routes = [
+    {
+      id: 1,
+      name: "Home",
+      route: "/",
+    },
+    {
+      id: 2,
+      name: "About Us",
+      route: "/about-us",
+      sub_routes: [
+        {
+          id: 1,
+          name: "Mission",
+          route: "/mission",
+        },
+        {
+          id: 2,
+          name: "Vision",
+          route: "/vision",
+        },
+        {
+          id: 3,
+          name: "Team",
+          route: "/team/core-team",
+        },
+      ],
+    },
+    {
+      id: 3,
+      name: "Services",
+      route: "/services",
+      sub_routes: [
+        {
+          id: 1,
+          name: "Marketing Service",
+          route: "/marketing-service",
+        },
+        {
+          id: 2,
+          name: "Pre-Sales Service",
+          route: "/pre-sales-service",
+        },
+        {
+          id: 3,
+          name: "Sales Service",
+          route: "/sales-service",
+        },
+        {
+          id: 4,
+          name: "Account Management",
+          route: "/account-management-service",
+        },
+        {
+          id: 5,
+          name: "Strategic Alliances Partnerships Service",
+          route: "/strategic-alliances-partnerships-service",
+        },
+        {
+          id: 6,
+          name: "Delivery Service",
+          route: "/delivery-service",
+        },
+      ],
+    },
+    {
+      id: 4,
+      name: "Our Clients",
+      route: "/testimonials",
+    },
+    {
+      id: 5,
+      name: "Career",
+      route: "/career",
+    },
+    {
+      id: 6,
+      name: "Contact Us",
+      route: "/contact-us",
+    },
+  ];
 
   const links = (
     <>
-      <li>
-        <NavLink
-          to="/marketing-service"
-          className={({ isActive }) =>
-            isActive ? " text-primary font-semibold " : ""
-          }
-        >
-          Marketing
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/pre-sales-service"
-          className={({ isActive }) =>
-            isActive ? " text-primary font-semibold" : ""
-          }
-        >
-          Pre-sales
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/sales-service"
-          className={({ isActive }) =>
-            isActive ? " text-primary font-semibold" : ""
-          }
-        >
-          Sales
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/account-management-service"
-          className={({ isActive }) =>
-            isActive ? " text-primary font-semibold" : ""
-          }
-        >
-          Account Management
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/strategic-alliances-partnerships-service"
-          className={({ isActive }) =>
-            isActive ? " text-primary font-semibold" : ""
-          }
-        >
-          Strategic Alliances & Partnerships
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/delivery-service"
-          className={({ isActive }) =>
-            isActive ? " text-primary font-semibold" : ""
-          }
-        >
-          Delivery
-        </NavLink>
-      </li>
-
-      <li>
-        <NavLink
-          to="/pricing"
-          className={({ isActive }) =>
-            isActive ? " text-primary font-semibold" : ""
-          }
-        >
-          Pricing
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/testimonials"
-          className={({ isActive }) =>
-            isActive ? " text-primary font-semibold" : ""
-          }
-        >
-          Client & Testimonials
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/career"
-          className={({ isActive }) =>
-            isActive ? " text-primary font-semibold" : ""
-          }
-        >
-          Careers
-        </NavLink>
-      </li>
-      <li className="group">
-        <span className="flex items-center gap-1">
-          About <FaAngleDown />{" "}
-        </span>
-        <div
-          className={`absolute hidden group-hover:block z-10  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 p-5`}
-        >
-          <ul className="py-2 text-sm text-gray-700 flex flex-col gap-3">
-            <li>
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  isActive ? " text-primary font-semibold" : ""
-                }
-              >
-                Contact
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/team/core-team"
-                className={({ isActive }) =>
-                  isActive ? " text-primary font-semibold" : ""
-                }
-              >
-                Team
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-      </li>
+      {routes?.map((route) =>
+        !route.sub_routes ? (
+          <li key={route?.id}>
+            <NavLink
+              to={route?.route}
+              className={({ isActive }) =>
+                isActive ? " text-primary font-semibold" : ""
+              }
+            >
+              {route?.name}
+            </NavLink>
+          </li>
+        ) : (
+          <li key={route?.id} className="group">
+            <span className="flex items-center gap-1">
+              {route?.name} <FaAngleDown />{" "}
+            </span>
+            <div
+              className={`absolute hidden group-hover:block z-10  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 p-5`}
+            >
+              <ul className="py-2 text-sm text-gray-700 flex flex-col gap-3">
+                {route?.sub_routes?.map((route) => (
+                  <li key={route?.id}>
+                    <NavLink
+                      to={route?.route}
+                      className={({ isActive }) =>
+                        isActive ? " text-primary font-semibold" : ""
+                      }
+                    >
+                      {route?.name}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
+        )
+      )}
     </>
   );
 
   return (
     <>
       <nav
-        className={`${
-          scrolling ? " bg-white/70" : "bg-white transition-down"
-        }  border-gray-200  sticky top-0  z-40 shadow-md `}
+        className={`${"bg-white transition-down"}  border-gray-200  sticky top-0  z-40 shadow-md `}
       >
         {/* toast */}
         <ToastContainer />

@@ -28,7 +28,7 @@ const App = () => {
     },
     {
       id: 2,
-      route: "/contact",
+      route: "/contact-us",
       component: Contact,
     },
     {

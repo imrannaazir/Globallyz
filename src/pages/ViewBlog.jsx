@@ -52,8 +52,8 @@ export default function ViewBlog() {
   // related blogs
   const relatedBlogs = blogs?.filter((blog) => Number(blog?.id) !== Number(id));
   return (
-    <Layout bg_img="https://i.ibb.co/gDHPZ97/blog.jpg">
-      <Banner title="Single Blog" />
+    <Layout>
+      <Banner title="Single Blog" bg_img="https://i.ibb.co/gDHPZ97/blog.jpg" />
       <div className="max-w-screen-xl  mx-auto p-4 flex flex-col lg:flex-row gap-5">
         <DetailedPost selectedBlog={selectedBlog} />
         <RelatedPostContainer relatedBlogs={relatedBlogs} />

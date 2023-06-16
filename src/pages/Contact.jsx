@@ -6,8 +6,11 @@ import ContactForm from "../components/contact/ContactForm";
 
 export default function Contact() {
   return (
-    <Layout bg_img="https://i.ibb.co/mc2yb94/contact.webp">
-      <Banner title="Contact Us" />
+    <Layout>
+      <Banner
+        title="Contact Us"
+        bg_img="https://i.ibb.co/mc2yb94/contact.webp"
+      />
       {/* contact us */}
       <div className="contact-us ">
         <div className="max-w-screen-xl mx-auto p-4 flex flex-col lg:flex-row">

@@ -7,7 +7,7 @@ import Layout from "../components/ui/Layout";
 
 export default function Home() {
   return (
-    <Layout bg_img="https://i.ibb.co/s355sn6/background.webp">
+    <Layout>
       <Hero />
       {/* <AboutUs /> */}
       <Services />

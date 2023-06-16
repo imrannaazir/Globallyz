@@ -199,12 +199,25 @@ export default function Services() {
     },
   ];
   return (
-    <div className="  mx-auto p-4 grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 my-20 gap-1 gap-y-3 justify-center">
+    <div
+      className="  
+            mx-auto
+            p-4
+            grid
+            lg:grid-cols-3
+            md:grid-cols-3
+            sm:grid-cols-2
+            my-20
+            gap-5
+            justify-center
+            max-w-screen-xl
+            "
+    >
       {/* cards */}
       {services.map((service) => (
         <div
           key={service.id}
-          className={` px-5 shadow-lg max-w-sm rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ${service.color} bg-opacity-70 `}
+          className={` px-5 shadow-lg  rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ${service.color} bg-opacity-70 `}
         >
           <Link to={service.route}>
             <service.icon className="absolute right-5 top-5 text-5xl text-primary/40 group-hover:text-white group-hover:transition-up" />
