@@ -4,6 +4,7 @@ import { MdOutlineManageAccounts } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { FaHandshake } from "react-icons/fa";
 import { DiTechcrunch } from "react-icons/di";
+import SectionHeader from "./SectionHeader";
 
 export default function Services() {
   // const services
@@ -199,71 +200,71 @@ export default function Services() {
     },
   ];
   return (
-    <div
-      className="  
-            mx-auto
-            p-4
-            grid
-            lg:grid-cols-3
-            md:grid-cols-2
-            sm:grid-cols-1
-            my-20
-            gap-5
-            justify-center
-            max-w-screen-xl
+    <>
+      <SectionHeader>Services We are providing</SectionHeader>
+      <div
+        className="  
+      mx-auto
+      p-4
+      grid
+      lg:grid-cols-3
+      md:grid-cols-2
+      sm:grid-cols-1
+      my-20
+      gap-5
+      justify-center
+      max-w-screen-xl
+      "
+      >
+        {/* cards */}
+        {services.map((service) => (
+          <Link
+            to={service?.route}
+            key={service?.id}
+            className="
+        border
+        border-gray-500
+        rounded-md
+        p-5
+        flex
+        items-center
+        justify-center
+        gap-5
+        hover:shadow-xl
+        
+        "
+          >
+            <img
+              className="
+            w-24
+            h-24
+            rounded-full
+
             "
-    >
-      {/* cards */}
-      {services.map((service) => (
-        <div
-          key={service.id}
-          className={` px-5 shadow-lg  rounded-sm relative group hover:bg-gradient-to-tr from-primary to-blue-400  transition duration-500 ${service.color} bg-opacity-70 `}
-        >
-          <Link to={service.route}>
-            <service.icon className="absolute right-5 top-5 text-5xl text-primary/40 group-hover:text-white group-hover:transition-up" />
-            <div className="my-5">
-              <div className="mb-9">
-                <h1 className="text-2xl  relative mb-3 text-primary group-hover:text-white group-hover:transition-up w-[70%]">
-                  {service.name}
-                </h1>
-                <div className="h-[2px] w-[50px] -bottom-4 left-0 bg-primary group-hover:bg-white group-hover:transition-up"></div>
-              </div>
-              <div className="font-medium text-gray-900 group-hover:text-white group-hover:transition-down">
-                {service?.details?.map((feature, i) => (
-                  <p className="flex items-start gap-1" key={i}>
-                    <BsCheck2Circle className="mt-1 min-w-[24px]" />
-                    {feature}
-                  </p>
-                ))}
-                {service?.sub_service?.map((service) => (
-                  <div key={service?.id}>
-                    <h4 className="font-bold">{service?.name}</h4>
-                    {/* if sub service is available */}
-                    {service?.details.map((feature, i) => (
-                      <p className="flex items-start gap-1" key={i}>
-                        <BsCheck2Circle className="mt-1 min-w-[24px]" />
-                        {feature}
-                      </p>
-                    ))}
-                  </div>
-                ))}
-              </div>
+              src="https://i.ibb.co/7y9pR6h/mission.jpg"
+              alt=""
+            />
+
+            <div>
+              <h3
+                className="
+              text-primary 
+              text-xl
+              "
+              >
+                {service?.name}
+              </h3>
+
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
+                itaque, excepturi magni cumque eaque tempora voluptas ipsam
+                asperiores dolore esse nemo omnis delectus totam alias beatae a
+                amet autem reprehenderit!
+              </p>
             </div>
           </Link>
-          {/* if link is available */}
-          {service?.link && (
-            <a
-              href={service?.link?.url}
-              target="_blank"
-              className="border-2 px-6 py-3 bg-primary text-white 
-                  absolute z-30 group-hover:transition-up group-hover:border-white group-hover:text-white"
-              rel="noreferrer"
-            >
-              {service?.link?.link_title}
-            </a>
-          )}
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 }

@@ -136,18 +136,6 @@ const OurGoal = () => {
      
     "
     >
-      <img
-        alt="tailwind"
-        src="https://tailwindui.com/img/beams-home@95.jpg"
-        width={20}
-        height={20}
-        sizes="100"
-        className="
-                w-full
-                h-full
-                absolute
-            "
-      />
       <div
         className="
             grid 
