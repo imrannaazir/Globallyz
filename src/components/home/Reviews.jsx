@@ -68,6 +68,7 @@ export default function Reviews() {
     border-2
     rounded-md
     shadow-md
+    lg:p-14
      "
     >
       <Swiper

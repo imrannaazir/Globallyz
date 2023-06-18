@@ -1,3 +1,5 @@
+import SectionHeader from "./SectionHeader";
+
 export default function Contact() {
   return (
     <div
@@ -18,16 +20,7 @@ export default function Contact() {
               "
       /> */}
 
-      <div className="mx-auto max-w-2xl text-center pt-10">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          HOW CAN WE HELP ?
-        </h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
-          Get in touch with our representatives and start your journey on
-          expanding your company and making your business better, more agile and
-          profitable.
-        </p>
-      </div>
+      <SectionHeader>Get In Touch</SectionHeader>
       <form
         action="#"
         method="POST"

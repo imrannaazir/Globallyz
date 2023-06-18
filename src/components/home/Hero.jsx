@@ -6,7 +6,7 @@ export default function Hero() {
     <div className="relative hero-height">
       {/* Background img */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="hero-overlay bg-primary bg-opacity-60 absolute z-10"></div>
+        <div className="hero-overlay bg-black bg-opacity-60 absolute z-10"></div>
         <img
           src="https://spellthemes.com/demos/html-templates/acea/preview/assets/images/banner/banner1.jpg"
           alt="Background Image"
