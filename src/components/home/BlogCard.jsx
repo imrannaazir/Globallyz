@@ -7,7 +7,7 @@ export default function BlogCard({ blog }) {
   const { title, createdAt, content, thumbnail, likes, comments, id } =
     blog || {};
   return (
-    <div className="bg-white rounded-lg max-w-sm  hover:shadow-xl group overflow-hidden">
+    <div className="bg-white rounded-lg w-[375px]  hover:shadow-xl group overflow-hidden border-2">
       <div className="">
         <figure className="">
           <img
@@ -51,8 +51,8 @@ export default function BlogCard({ blog }) {
                 {title.slice(0, 36)}
               </a>
             </h3>
-            <p className="text-gray-500 leading-[32px]">
-              {content.slice(0, 130)}
+            <p className="text-gray-500 leading-[32px] text-justify">
+              {content.slice(0, 125)} <span>...</span>
             </p>
             <a href="#" className="">
               <PrimaryBtnAlt

@@ -7,7 +7,7 @@ export default function Contact() {
       backdrop-blur-md
     "
     >
-      <img
+      {/*  <img
         alt="tailwind"
         src="https://tailwindui.com/img/beams-home@95.jpg"
         className="
@@ -16,7 +16,7 @@ export default function Contact() {
                   absolute
                   z-[-1]
               "
-      />
+      /> */}
 
       <div className="mx-auto max-w-2xl text-center pt-10">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">

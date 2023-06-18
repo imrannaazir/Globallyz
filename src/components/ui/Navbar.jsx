@@ -89,16 +89,21 @@ export default function Navbar() {
     },
     {
       id: 4,
+      name: "Pricing",
+      route: "/pricing",
+    },
+    {
+      id: 5,
       name: "Our Clients",
       route: "/testimonials",
     },
     {
-      id: 5,
+      id: 6,
       name: "Career",
       route: "/career",
     },
     {
-      id: 6,
+      id: 7,
       name: "Contact Us",
       route: "/contact-us",
     },
@@ -121,7 +126,8 @@ export default function Navbar() {
         ) : (
           <li key={route?.id} className="group">
             <span className="flex items-center gap-1">
-              {route?.name} <FaAngleDown />{" "}
+              {route?.name}{" "}
+              <FaAngleDown className="group-hover:rotate-180  transition duration-200" />{" "}
             </span>
             <div
               className={`absolute hidden group-hover:block z-10  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 p-5`}

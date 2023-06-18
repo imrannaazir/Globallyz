@@ -9,7 +9,7 @@ export default function Career() {
       <h1 className="  text-4xl text-center my-10">Join Our Awesome Team </h1>
       <div className="max-w-screen-xl  mx-auto p-4 flex flex-col md:flex-row justify-center gap-10 items-center ">
         {/* card 1 */}
-        <div className="bg-white/70 p-10 text-center space-y-5 rounded-lg max-w-sm">
+        <div className="bg-white/70 p-10 text-center space-y-5 rounded-lg max-w-sm border-2 shadow-md">
           <p className="text-primary"> Join as a </p>
           <h1 className="text-4xl uppercase ">Fresher / Student</h1>
           <PrimaryBtnAlt shape="px-6 py-3 rounded-full">
@@ -18,7 +18,7 @@ export default function Career() {
         </div>
 
         {/* card 2*/}
-        <div className="bg-white/70 p-10 text-center space-y-5 rounded-lg max-w-sm">
+        <div className="bg-white/70 p-10 text-center space-y-5 rounded-lg max-w-sm border-2 shadow-md">
           <p className="text-primary"> Join as a </p>
           <h1 className="text-4xl uppercase ">Experienced / Professional</h1>
           <PrimaryBtnAlt shape="px-6 py-3 rounded-full">
