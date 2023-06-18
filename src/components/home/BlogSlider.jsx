@@ -1,8 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation } from "swiper";
 import "swiper/swiper-bundle.min.css";
 import BlogCard from "./BlogCard";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import SectionHeader from "./SectionHeader";
 
 const BlogSlider = () => {
   const blogs = [
@@ -81,16 +82,18 @@ const BlogSlider = () => {
   ];
   return (
     <div className="relative w-full group ">
+      <SectionHeader>OUR LATEST BLOG</SectionHeader>
       <Swiper
-        className="mx-auto p-4 max-w-screen-xl"
-        modules={[Autoplay, Navigation, Pagination]}
+        className="mx-auto p-4 max-w-screen-xl pb-10"
+        modules={[Autoplay, Navigation]}
         spaceBetween={0}
         slidesPerView={3}
+        loop={true}
         pagination={{ clickable: true }}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         navigation={{

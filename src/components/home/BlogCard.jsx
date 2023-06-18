@@ -11,7 +11,7 @@ export default function BlogCard({ blog }) {
       <div className="">
         <figure className="">
           <img
-            className="rounded-t-lg group-hover:scale-105 duration-200 h-[230px] w-full"
+            className="rounded-t-lg   h-[230px] w-full"
             src={thumbnail}
             alt=""
           />
