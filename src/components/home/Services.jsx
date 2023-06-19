@@ -1,10 +1,10 @@
-import { BsCheck2Circle, BsGraphUpArrow } from "react-icons/bs";
+import { BsGraphUpArrow } from "react-icons/bs";
 import { VscGraph, VscGraphLeft } from "react-icons/vsc";
 import { MdOutlineManageAccounts } from "react-icons/md";
-import { Link } from "react-router-dom";
 import { FaHandshake } from "react-icons/fa";
 import { DiTechcrunch } from "react-icons/di";
 import SectionHeader from "./SectionHeader";
+import SingleService from "./SingleService";
 
 export default function Services() {
   // const services
@@ -218,51 +218,7 @@ export default function Services() {
       >
         {/* cards */}
         {services.map((service) => (
-          <Link
-            to={service?.route}
-            key={service?.id}
-            className="
-        border
-        border-gray-500
-        rounded-md
-        p-5
-        flex
-        items-center
-        justify-center
-        gap-5
-        hover:shadow-xl
-        
-        "
-          >
-            <img
-              className="
-            w-24
-            h-24
-            rounded-full
-
-            "
-              src="https://i.ibb.co/7y9pR6h/mission.jpg"
-              alt=""
-            />
-
-            <div>
-              <h3
-                className="
-              text-primary 
-              text-xl
-              "
-              >
-                {service?.name}
-              </h3>
-
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-                itaque, excepturi magni cumque eaque tempora voluptas ipsam
-                asperiores dolore esse nemo omnis delectus totam alias beatae a
-                amet autem reprehenderit!
-              </p>
-            </div>
-          </Link>
+          <SingleService key={service?.id} service={service} />
         ))}
       </div>
     </>

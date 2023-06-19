@@ -81,13 +81,13 @@ const BlogSlider = () => {
     },
   ];
   return (
-    <div className="relative w-full group ">
+    <div className="relative w-full group p-4">
       <SectionHeader>OUR LATEST BLOG</SectionHeader>
       <Swiper
         className="mx-auto p-4 max-w-screen-xl pb-10"
         modules={[Autoplay, Navigation]}
         spaceBetween={0}
-        slidesPerView={3}
+        // slidesPerView={3}
         loop={true}
         pagination={{ clickable: true }}
         // autoplay={{
@@ -99,6 +99,17 @@ const BlogSlider = () => {
         navigation={{
           prevEl: ".custom-prev",
           nextEl: ".custom-next",
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
         }}
       >
         {blogs.map((blog) => (
@@ -120,8 +131,9 @@ const BlogSlider = () => {
         items-center 
         absolute 
         z-[999] 
-        -left-14
-        group-hover:left-0
+        left-0
+        md:-left-14
+        md:group-hover:left-0
         top-[50%]
         rounded-full"
         >
@@ -139,8 +151,9 @@ const BlogSlider = () => {
         justify-center 
         items-center 
         absolute 
-        -right-14
-        group-hover:right-0 
+        right-0
+        md:-right-14
+        md:group-hover:right-0 
         top-[50%] 
         z-[999]
         rounded-full"

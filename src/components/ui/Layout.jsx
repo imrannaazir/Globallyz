@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
   return (
-    <div className="">
+    <div className="bg-white">
       <Navbar />
       {children}
       <Footer />

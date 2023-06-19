@@ -133,6 +133,7 @@ const OurGoal = () => {
      relative
      max-w-screen-xl
      mx-auto
+     p-4
      
     "
     >

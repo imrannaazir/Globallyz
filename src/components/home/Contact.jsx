@@ -7,6 +7,7 @@ export default function Contact() {
       my-20
       relative
       backdrop-blur-md
+      p-4
     "
     >
       {/*  <img
