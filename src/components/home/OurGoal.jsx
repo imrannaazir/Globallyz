@@ -104,30 +104,31 @@ const OurGoal = () => {
     {
       heading: "Vision",
       image: "https://i.ibb.co/BLdf9mV/vision.jpg",
-      para: "Universal education for empowerment and positive change.",
+      para: "Empowering businesses to achieve growth through innovative strategies and exceptional experiences.  ",
     },
 
     {
       heading: "mission",
       image: "https://i.ibb.co/7y9pR6h/mission.jpg",
-      para: "Our mission is to provide free education to all, empowering individuals and fostering positive change.",
+      para: " Partnering with businesses to drive sustainable growth, visibility, and profitability through customized solutions and exceeding expectations.   ",
     },
 
     {
       heading: "values",
       image: "https://i.ibb.co/263NFtq/values.jpg",
-      para: "Accessibility, Inclusivity, Quality, Empowerment, Collaboration, Continuous Improvement, and Ethical Conduct",
+      para: "Excellence, Innovation, Collaboration, Integrity, Results-driven, Continuous Learning.    ",
     },
 
     {
       heading: "strategy",
       image: "https://i.ibb.co/ctM6pb2/statregy.jpg  ",
-      para: "Utilizing technology, partnerships, and community engagement to provide free education globally, while staying adaptable and innovative",
+      para: "Client-centric approach, comprehensive services, data-driven insights, innovation and adaptability, collaborative partnerships, measurable results.",
     },
   ];
 
   return (
     <div
+      id="our-goal"
       className="
      my-[6rem]
      relative

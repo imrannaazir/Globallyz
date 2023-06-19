@@ -48,7 +48,7 @@ export default function ContentMarketingTeam() {
       designation: "Writer",
       about:
         "A talented Digital Marketing Executive with a strong command of various digital platforms and strategies. With a passion for staying ahead of digital trends, he excels at creating and implementing effective marketing campaigns that drive online visibility and engagement. Sambhrant's analytical mindset and results-driven approach make him a valuable asset in the field of digital marketing.",
-      img: "https://images.pexels.com/photos/15985474/pexels-photo-15985474/free-photo-of-young-elegant-woman-sitting-on-a-sofa.jpeg?auto=compress&cs=tinysrgb&w=600",
+      img: "https://i.ibb.co/rFn62BH/user.jpg",
     },
     {
       id: 8,
@@ -56,7 +56,7 @@ export default function ContentMarketingTeam() {
       designation: "Writer",
       about:
         "A talented Digital Marketing Executive with a strong command of various digital platforms and strategies. With a passion for staying ahead of digital trends, he excels at creating and implementing effective marketing campaigns that drive online visibility and engagement. Sambhrant's analytical mindset and results-driven approach make him a valuable asset in the field of digital marketing.",
-      img: "https://spellthemes.com/demos/html-templates/acea/preview/assets/images/all-img/team2.png",
+      img: "https://i.ibb.co/rFn62BH/user.jpg",
     },
     {
       id: 9,
@@ -64,7 +64,7 @@ export default function ContentMarketingTeam() {
       designation: "Writer",
       about:
         "A talented Digital Marketing Executive with a strong command of various digital platforms and strategies. With a passion for staying ahead of digital trends, he excels at creating and implementing effective marketing campaigns that drive online visibility and engagement. Sambhrant's analytical mindset and results-driven approach make him a valuable asset in the field of digital marketing.",
-      img: "https://spellthemes.com/demos/html-templates/acea/preview/assets/images/all-img/teambg1.jpg",
+      img: "https://i.ibb.co/rFn62BH/user.jpg",
     },
     {
       id: 10,
@@ -72,7 +72,7 @@ export default function ContentMarketingTeam() {
       designation: "Content Marketing Intern",
       about:
         "A talented Digital Marketing Executive with a strong command of various digital platforms and strategies. With a passion for staying ahead of digital trends, he excels at creating and implementing effective marketing campaigns that drive online visibility and engagement. Sambhrant's analytical mindset and results-driven approach make him a valuable asset in the field of digital marketing.",
-      img: "https://spellthemes.com/demos/html-templates/acea/preview/assets/images/all-img/teambg4.jpg",
+      img: "https://i.ibb.co/rFn62BH/user.jpg",
     },
   ];
   return (

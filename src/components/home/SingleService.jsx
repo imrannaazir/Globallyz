@@ -26,7 +26,7 @@ export default function SingleService({ service }) {
             rounded-full
 
             "
-        src="https://i.ibb.co/7y9pR6h/mission.jpg"
+        src={service?.img}
         alt=""
       />
 
@@ -40,12 +40,7 @@ export default function SingleService({ service }) {
           {service?.name}
         </h3>
 
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est itaque,
-          excepturi magni cumque eaque tempora voluptas ipsam asperiores dolore
-          esse nemo omnis delectus totam alias beatae a amet autem
-          reprehenderit!
-        </p>
+        <p>{service?.details}</p>
       </div>
     </Link>
   );

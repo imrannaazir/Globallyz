@@ -5,6 +5,7 @@ import { HiBars3BottomRight } from "react-icons/hi2";
 import { FaAngleDown } from "react-icons/fa";
 import { BiX } from "react-icons/bi";
 import "react-toastify/dist/ReactToastify.css";
+import { HashLink } from "react-router-hash-link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,12 +37,12 @@ export default function Navbar() {
         {
           id: 1,
           name: "Mission",
-          route: "/mission",
+          route: "/#our-goal",
         },
         {
           id: 2,
           name: "Vision",
-          route: "/vision",
+          route: "/#our-goal",
         },
         {
           id: 3,
@@ -135,14 +136,20 @@ export default function Navbar() {
               <ul className="py-2 text-sm text-gray-700 flex flex-col gap-3">
                 {route?.sub_routes?.map((route) => (
                   <li key={route?.id}>
-                    <NavLink
-                      to={route?.route}
-                      className={({ isActive }) =>
-                        isActive ? " text-primary font-semibold" : ""
-                      }
-                    >
-                      {route?.name}
-                    </NavLink>
+                    {route?.route?.includes("#") ? (
+                      <HashLink className="" to={route?.route} smooth>
+                        {route?.name}
+                      </HashLink>
+                    ) : (
+                      <NavLink
+                        to={route?.route}
+                        className={({ isActive }) =>
+                          isActive ? " text-primary font-semibold" : ""
+                        }
+                      >
+                        {route?.name}
+                      </NavLink>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -188,7 +195,6 @@ export default function Navbar() {
           </ul>
         </div>
       </nav>
-      {/* <aside className="fixed md:hidden top-0 right-0 w-screen h-full bg-black/70 z-[999]"></aside> */}
     </>
   );
 }
