@@ -78,6 +78,7 @@ const TiltComponent = ({ index, heading, image, para }) => {
                 bg-transparent
                 text-white
                 text-bold
+                capitalize
                 "
             >
               {heading}
@@ -109,13 +110,13 @@ const OurGoal = () => {
 
     {
       heading: "mission",
-      image: "https://i.ibb.co/7y9pR6h/mission.jpg",
+      image: "https://i.ibb.co/f25S1Fp/mission.png",
       para: " Partnering with businesses to drive sustainable growth, visibility, and profitability through customized solutions and exceeding expectations.   ",
     },
 
     {
       heading: "values",
-      image: "https://i.ibb.co/263NFtq/values.jpg",
+      image: "https://i.ibb.co/rcSDLJ6/values.png",
       para: "Excellence, Innovation, Collaboration, Integrity, Results-driven, Continuous Learning.    ",
     },
 

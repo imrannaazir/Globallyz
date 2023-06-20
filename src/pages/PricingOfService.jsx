@@ -1,13 +1,11 @@
 import Banner from "../components/general/Banner";
 import Layout from "../components/ui/Layout";
-import { useParams } from "react-router-dom";
 import ServicePricingRow from "../components/Pricing/ServicePricingRow";
 import ServicePricingHead from "../components/Pricing/ServicePricingHead";
 import CollapsedTableBody from "../components/Pricing/CollapsedTableBody";
+import ContactUsForPricing from "../components/Pricing/ContactUsForPricing";
 
 export default function PricingOfService() {
-  const { name } = useParams();
-
   const pricingInfos = [
     {
       id: 1,
@@ -460,35 +458,48 @@ export default function PricingOfService() {
     },
   ];
 
-  const selectedService = pricingInfos.find(
-    (service) =>
-      service.name.toLowerCase().trim().replace(/\s+/g, "-") ===
-      name.toLowerCase().trim().replace(/\s+/g, "-")
-  );
+  let content = null;
+
+  content = pricingInfos?.map((service) => (
+    <div key={service?.id} className="  py-10">
+      <h1
+        className="
+      text-3xl 
+      uppercase
+      text-center
+      my-5
+       "
+      >
+        Pricing for {service?.name}
+      </h1>
+      <div className="overflow-x-auto bg-base-200 max-w-screen-xl  mx-auto p-4">
+        <table className="table">
+          {/* head */}
+          <ServicePricingHead />
+
+          {service?.services?.map((service) =>
+            service?.sub_service ? (
+              <CollapsedTableBody service={service} key={service?.id} />
+            ) : (
+              <tbody key={service?.id}>
+                <ServicePricingRow service={service} />
+              </tbody>
+            )
+          )}
+        </table>
+      </div>
+    </div>
+  ));
+
   return (
     <Layout>
       <Banner
-        title={`${selectedService?.name} Service pricing`}
+        title={`Service pricing`}
         bg_img="https://i.ibb.co/W64yYcK/pricing.webp"
       />
-      <div className="  py-10">
-        <div className="overflow-x-auto bg-base-200 max-w-screen-xl  mx-auto p-4">
-          <table className="table">
-            {/* head */}
-            <ServicePricingHead />
+      {content}
 
-            {selectedService?.services?.map((service) =>
-              service?.sub_service ? (
-                <CollapsedTableBody service={service} key={service?.id} />
-              ) : (
-                <tbody key={service?.id}>
-                  <ServicePricingRow service={service} />
-                </tbody>
-              )
-            )}
-          </table>
-        </div>
-      </div>
+      <ContactUsForPricing />
     </Layout>
   );
 }

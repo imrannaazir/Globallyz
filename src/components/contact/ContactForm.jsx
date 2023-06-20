@@ -78,10 +78,10 @@ export default function ContactForm() {
               onChange={(e) => setFirstName(e.target.value)}
               className="input-style"
               required
-              placeholder="first name"
+              placeholder="First name"
               type="text"
-              name=""
-              id=""
+              name="first-name"
+              id="first-name"
             />
           </div>
           <div>
@@ -89,10 +89,10 @@ export default function ContactForm() {
               onChange={(e) => setLastName(e.target.value)}
               className="input-style"
               required
-              placeholder="last name"
+              placeholder="Last name"
               type="text"
-              name=""
-              id=""
+              name="last-name"
+              id="last-name"
             />
           </div>
         </div>
@@ -105,8 +105,8 @@ export default function ContactForm() {
               required
               placeholder="E-mail"
               type="email"
-              name=""
-              id=""
+              name="email"
+              id="email"
             />
           </div>
           <div>
@@ -114,10 +114,10 @@ export default function ContactForm() {
               onChange={(e) => setPhone(e.target.value)}
               className="input-style"
               required
-              placeholder="phone"
+              placeholder="Phone"
               type="tel"
-              name=""
-              id=""
+              name="phone"
+              id="phone"
             />
           </div>
         </div>
@@ -126,9 +126,9 @@ export default function ContactForm() {
             onChange={(e) => setMessage(e.target.value)}
             className="input-style"
             required
-            name=""
-            placeholder="write your message"
-            id=""
+            name="message"
+            placeholder="Write your message"
+            id="message"
             cols="30"
             rows="1"
           ></textarea>

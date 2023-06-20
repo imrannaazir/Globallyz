@@ -31,26 +31,19 @@ export default function Reviews() {
     {
       id: 3,
       name: "Phani Phenumatsa",
-      designation: "Director, Mediclinicals",
+      designation: "Director, Ravsol",
       review:
         "When we first approached Globallyz, we were struggling to reach our target audience and generate leads. But their team quickly assessed our needs and developed a comprehensive marketing strategy that has transformed our business",
       img: "https://i.ibb.co/stGnhFn/Phani-Phenumatsa.jpg",
     },
-    {
-      id: 4,
-      name: "NADH",
-      designation: "Sr Director, Ravsol",
-      review:
-        "We have had the pleasure of partnering with Globallyz for our digital marketing needs, and the experience has been outstanding. Their team is not only skilled and results-oriented, but they also take the time to understand our unique requirements and tailor their strategies accordingly. The level of professionalism and attention to detail they bring to every project is commendable. Globallyz has undoubtedly played a crucial role in our online success, and we look forward to continuing our collaboration in the future.",
-      img: "http://rainbowit.net/themes/imroz/wp-content/uploads/2021/09/team-01.jpg",
-    },
+
     {
       id: 5,
       name: "NAVEEN",
       designation: "Director,Mediclinicals",
       review:
         "Globallyz has truly been a game-changer for our business. Their expertise in digital marketing has helped us expand our online presence and reach a wider audience. Their strategic approach, coupled with their in-depth market analysis, has allowed us to stay ahead of the competition.",
-      img: "http://rainbowit.net/themes/imroz/wp-content/uploads/2021/09/team-01.jpg",
+      img: "https://i.ibb.co/rFn62BH/user.jpg",
     },
     {
       id: 6,

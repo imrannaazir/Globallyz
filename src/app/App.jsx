@@ -7,9 +7,8 @@ import PreSalesService from "../pages/PreSalesService";
 import SalesServices from "../pages/SalesServices";
 import AccountManagement from "../pages/AccountManagement";
 import DeliveryService from "../pages/DeliveryService";
-import Pricing from "../pages/Pricing";
+// import Pricing from "../pages/Pricing";
 import PricingOfService from "../pages/PricingOfService";
-import Package from "../pages/Package";
 import StrategicAlliancesPartnerships from "../pages/StrategicAlliancesPartnerships";
 import Testimonials from "../pages/Testimonials";
 import ViewBlog from "../pages/ViewBlog";
@@ -640,18 +639,14 @@ const App = () => {
     {
       id: 10,
       route: "/pricing",
-      component: Pricing,
+      component: PricingOfService,
     },
     {
       id: 11,
       route: "/pricing/:name",
       component: PricingOfService,
     },
-    {
-      id: 12,
-      route: "/pricing/:name/:service",
-      component: Package,
-    },
+
     {
       id: 12,
       route: "/testimonials",

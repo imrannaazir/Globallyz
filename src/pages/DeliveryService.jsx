@@ -10,6 +10,18 @@ export default function DeliveryService({ service }) {
   return (
     <Layout>
       <Banner title={name} bg_img="https://i.ibb.co/dQWf6pz/Delivery.webp" />
+
+      <div className="my-5 flex justify-center">
+        <a
+          href="http://dilizent.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="btn btn-primary btn-lg"
+        >
+          Dilizent
+        </a>
+      </div>
+
       <BenefitOfDigitalMarketing
         name={name}
         description={description}
