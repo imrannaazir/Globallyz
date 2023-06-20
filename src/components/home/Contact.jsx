@@ -1,28 +1,78 @@
-import SectionHeader from "./SectionHeader";
+import { toast } from "react-toastify";
+import SectionHeader from "../home/SectionHeader";
+import { useState } from "react";
 
 export default function Contact() {
-  return (
-    <div
-      className="
-      my-20
-      relative
-      backdrop-blur-md
-      p-4
-    "
-    >
-      {/*  <img
-        alt="tailwind"
-        src="https://tailwindui.com/img/beams-home@95.jpg"
-        className="
-                  w-full
-                  h-full
-                  absolute
-                  z-[-1]
-              "
-      /> */}
+  // state for loading
+  const [isLoading, setIsLoading] = useState(false);
 
-      <SectionHeader>Get In Touch</SectionHeader>
+  // state for name
+  const [firstName, setFirstName] = useState("");
+
+  // state for name
+  const [lastName, setLastName] = useState("");
+
+  // state for email
+  const [email, setEmail] = useState("");
+
+  //state for phone
+  const [phone, setPhone] = useState("");
+
+  // state for message
+  const [message, setMessage] = useState("");
+
+  const formData = {
+    name: `${firstName} ${lastName}`,
+    email,
+    phone,
+    message,
+  };
+
+  // submit to server
+  const handleSubmit = async (e) => {
+    setIsLoading(true);
+
+    e.preventDefault();
+
+    try {
+      const response = await fetch(
+        "https://globallyz-server.onrender.com/client",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.ok) {
+        console.log("Data submitted successfully");
+        toast.success("Message sent successfully!");
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setPhone("");
+        setMessage("");
+      } else {
+        console.error("Error submitting data");
+        alert("Error submitting data");
+      }
+    } catch (error) {
+      console.error("Error submitting data", error);
+      alert("Error submitting data");
+    }
+
+    setIsLoading(false);
+  };
+
+  // decide what to render
+  let content;
+  if (isLoading) content = <p>Sending...</p>;
+  if (!isLoading) {
+    content = (
       <form
+        onSubmit={handleSubmit}
         action="#"
         method="POST"
         className="mx-auto mt-16 max-w-xl sm:mt-20 pb-10"
@@ -37,45 +87,51 @@ export default function Contact() {
             </label>
             <div className="mt-2.5">
               <input
+                onChange={(e) => setFirstName(e.target.value)}
+                value={firstName}
                 type="text"
                 name="first-name"
                 id="first-name"
                 autoComplete="given-name"
                 className="
-                block 
-                w-full 
-                rounded-md 
-                border-0 
-                px-3.5 
-                py-2 
-                text-gray-900 
-                shadow-sm 
-                ring-1 
-                ring-inset 
-                ring-gray-300 
-                placeholder:text-gray-400 
-                focus:ring-2 
-                focus:ring-inset 
-                focus:ring-indigo-600 
-                sm:text-sm 
-                sm:leading-6"
+            block 
+            w-full 
+            rounded-md 
+            border-0 
+            px-3.5 
+            py-2 
+            text-gray-900 
+            shadow-sm 
+            ring-1 
+            ring-inset 
+            ring-gray-300 
+            placeholder:text-gray-400 
+            focus:ring-2 
+            focus:ring-inset 
+            focus:ring-indigo-600 
+            sm:text-sm 
+            sm:leading-6"
               />
             </div>
           </div>
+
+          {/* last name input */}
           <div>
             <label
               htmlFor="last-name"
               className="
-              block 
-              text-sm 
-              font-semibold 
-              leading-6 
-              text-gray-900"
+          block 
+          text-sm 
+          font-semibold 
+          leading-6 
+          text-gray-900"
             >
               Last name
             </label>
             <div className="mt-2.5">
               <input
+                onChange={(e) => setLastName(e.target.value)}
+                value={lastName}
                 type="text"
                 name="last-name"
                 id="last-name"
@@ -85,6 +141,7 @@ export default function Contact() {
             </div>
           </div>
 
+          {/* email input */}
           <div className="sm:col-span-2">
             <label
               htmlFor="email"
@@ -94,6 +151,8 @@ export default function Contact() {
             </label>
             <div className="mt-2.5">
               <input
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
                 type="email"
                 name="email"
                 id="email"
@@ -102,32 +161,39 @@ export default function Contact() {
               />
             </div>
           </div>
+
+          {/* Phone */}
           <div className="sm:col-span-2">
             <label
-              htmlFor="company"
+              htmlFor="phone"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Subject
+              Phone
             </label>
             <div className="mt-2.5">
               <input
+                onChange={(e) => setPhone(e.target.value)}
+                value={phone}
                 type="text"
-                name="Subject"
-                id="Subject"
+                name="phone"
+                id="phone"
                 autoComplete="organization"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
+
           <div className="sm:col-span-2">
             <label
               htmlFor="message"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Your message (optional)
+              Your message
             </label>
             <div className="mt-2.5">
               <textarea
+                onChange={(e) => setMessage(e.target.value)}
+                value={message}
                 name="message"
                 id="message"
                 rows={4}
@@ -146,6 +212,21 @@ export default function Contact() {
           </button>
         </div>
       </form>
+    );
+  }
+
+  return (
+    <div
+      id="contact-for-pricing"
+      className="
+      my-20
+      relative
+      backdrop-blur-md
+      p-4
+    "
+    >
+      <SectionHeader>Get In Touch</SectionHeader>
+      {content}
     </div>
   );
 }

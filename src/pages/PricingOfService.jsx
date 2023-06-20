@@ -430,13 +430,70 @@ export default function PricingOfService() {
         },
       ],
     },
+
     {
-      id: 5,
-      name: "Delivery",
+      id: 6,
+      name: "Strategic Alliances Partnerships Service",
       services: [
         {
           id: 53,
-          service: "Delivery",
+          service: "Competency Partnerships",
+          basic: true,
+          premium: true,
+          elite: true,
+        },
+        {
+          id: 54,
+          service: " Service Provider partnerships",
+          basic: true,
+          premium: true,
+          elite: true,
+        },
+        {
+          id: 55,
+          service: "  Trust Partnerships",
+          basic: true,
+          premium: true,
+          elite: true,
+        },
+        {
+          id: 56,
+          service: "    Brand Partnerships",
+          basic: true,
+          premium: true,
+          elite: true,
+        },
+        {
+          id: 57,
+          service: "   Product Provider partnerships",
+          basic: true,
+          premium: true,
+          elite: true,
+        },
+        {
+          id: 58,
+          service: "  Mergers & Acquisitions",
+          basic: true,
+          premium: true,
+          elite: true,
+        },
+        {
+          id: 59,
+          service: "    Campaign Partnerships",
+          basic: true,
+          premium: true,
+          elite: true,
+        },
+        {
+          id: 60,
+          service: "      Business Development Partnerships",
+          basic: true,
+          premium: true,
+          elite: true,
+        },
+        {
+          id: 61,
+          service: "   Complementary Services Partnerships",
           basic: true,
           premium: true,
           elite: true,
@@ -444,8 +501,8 @@ export default function PricingOfService() {
       ],
     },
     {
-      id: 6,
-      name: "Strategic Alliances Partnerships Service",
+      id: 5,
+      name: "Delivery",
       services: [
         {
           id: 53,
