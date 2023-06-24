@@ -6,14 +6,14 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" className="flex items-center">
+            <a href="3" className="flex items-center">
               <img
                 src="https://i.ibb.co/qWTXjcY/Globallyz-logo.png"
                 className="h-16 mr-3"
-                alt="FlowBite Logo"
+                alt="logo"
               />
             </a>
-            <p>We Are Business Development Agency</p>
+            <p>A Dignity of Noble Company</p>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
@@ -99,8 +99,7 @@ const Footer = () => {
       </div>
       <div className="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
         <span className="text-sm text-primary dark:text-gray-300 sm:text-center">
-          © 2023 <a href="https://flowbite.com/">Globallyz</a>. All Rights
-          Reserved.
+          © 2023 <a href="#">Globallyz</a>. All Rights Reserved.
         </span>
         <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0">
           <a

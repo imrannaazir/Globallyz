@@ -500,7 +500,7 @@ export default function PricingOfService() {
         },
       ],
     },
-    {
+    /* {
       id: 5,
       name: "Delivery",
       services: [
@@ -512,7 +512,7 @@ export default function PricingOfService() {
           elite: true,
         },
       ],
-    },
+    }, */
   ];
 
   let content = null;
