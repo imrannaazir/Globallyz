@@ -4,20 +4,20 @@ export default function CoreTeam() {
   const teams = [
     {
       id: 1,
-      name: "Hemant Yadav",
       designation: "Director  ",
+      name: "Madhavi ",
+      about:
+        "A driven entrepreneur and marketing expert with a deep understanding of customer behavior and market dynamics. With a passion for crafting effective strategies, she excels in connecting with customers in a meaningful way",
+      img: "https://i.ibb.co/8PTf915/Madhavi.jpg",
+    },
+    /* {
+      id: 2,
+      designation: "Business Development Manager",
+      name: "Hemant Yadav",
       about:
         "A driven entrepreneur and marketing expert with a deep understanding of customer behavior and market dynamics. With a passion for crafting effective strategies, he excels in connecting with customers in a meaningful way. ",
       img: "https://i.ibb.co/mN8kcVV/hemant.jpg",
-    },
-    {
-      id: 2,
-      name: "Madhavi ",
-      designation: "Business Development Manager",
-      about:
-        "A proficient Business Development Manager, adept at driving business growth and building strategic partnerships. With a deep understanding of market dynamics and exceptional communication skills, she establishes strong client relationships. Her relentless pursuit of excellence and passion for creating opportunities make her an invaluable asset in business development.",
-      img: "https://i.ibb.co/8PTf915/Madhavi.jpg",
-    },
+    }, */
     {
       id: 3,
       name: "Neelam Kota",

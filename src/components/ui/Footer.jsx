@@ -13,7 +13,13 @@ const Footer = () => {
                 alt="logo"
               />
             </a>
-            <p>A Dignity of Noble Company</p>
+            <p
+              className="
+            pl-[73px]
+            "
+            >
+              A Dignity of Noble Company
+            </p>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
