@@ -16,9 +16,10 @@ const Footer = () => {
             <p
               className="
             pl-[73px]
+            capitalize
             "
             >
-              A Dignity of Noble Company
+              a business development and Recruitment company
             </p>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

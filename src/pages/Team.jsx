@@ -21,6 +21,18 @@ export default function Team() {
               {/* <!-- Sidebar content here --> */}
               <li className="border-b mb-2 text-lg border-primary">
                 <NavLink
+                  to="/team/on-board"
+                  className={({ isActive }) =>
+                    isActive
+                      ? " text-primary font-semibold border-l-4 border-primary pl-2"
+                      : ""
+                  }
+                >
+                  On Board
+                </NavLink>
+              </li>
+              <li className="border-b mb-2 text-lg border-primary">
+                <NavLink
                   to="/team/core-team"
                   className={({ isActive }) =>
                     isActive

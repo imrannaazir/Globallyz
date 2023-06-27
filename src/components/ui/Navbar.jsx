@@ -86,6 +86,11 @@ export default function Navbar() {
           name: "Delivery Service",
           route: "/delivery-service",
         },
+        {
+          id: 6,
+          name: "Recruitment  Service",
+          route: "/recruitment-services",
+        },
       ],
     },
     {

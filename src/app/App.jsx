@@ -17,6 +17,8 @@ import CoreTeam from "../components/team/CoreTeam";
 import ExecutiveTeam from "../components/team/ExecutiveTeam";
 import ContentMarketingTeam from "../components/team/ContentMarketingTeam";
 import ToolsTechnologies from "../components/team/ToolsTechnologies";
+import OnBoard from "../components/team/OnBoard";
+import RecruitmentServices from "../pages/RecruitmentServices";
 
 const App = () => {
   const routes = [
@@ -54,6 +56,11 @@ const App = () => {
           id: 4,
           component: ToolsTechnologies,
           route: "tools-technologies",
+        },
+        {
+          id: 4,
+          component: OnBoard,
+          route: "on-board",
         },
       ],
     },
@@ -607,6 +614,42 @@ const App = () => {
       name: "Strategic Alliances Partnerships Service",
       description:
         "With our Delight Service, we go the extra mile to exceed customer expectations and create memorable experiences. Through Cross Sell and Up Sell strategies, we identify opportunities to offer additional products or services that complement customers' needs. By leveraging customer insights and personalized approaches, we provide tailored recommendations that add value and enhance their journey. Whether it's suggesting relevant upgrades or showcasing exclusive offers, our goal is to delight customers, drive repeat business, and foster long-term loyalty. We believe that going beyond satisfaction and surprising customers with exceptional service leads to positive word-of-mouth, increased revenue, and a strong competitive advantage. Experience the power of our Delight Service and elevate your customer relationships to new heights.",
+      featuredImg: "",
+      services: [
+        {
+          id: 1,
+          name: "Cross Sell",
+          details:
+            "Through our Cross Sell service, we help you capitalize on existing customer relationships by offering complementary products or services. By understanding their preferences and needs, we identify opportunities to recommend additional offerings that enhance their experience and address their evolving requirements. With strategic cross-selling tactics, we not only increase customer value but also foster loyalty and drive revenue growth. Maximize the potential of your customer base and unlock new business opportunities with our effective Cross Sell service.",
+        },
+        {
+          id: 2,
+          name: "	Up Sell",
+          details:
+            "With our Up Sell service, we help you maximize revenue and customer value by offering premium or upgraded versions of your products or services. By understanding customer preferences and needs, we identify opportunities to present higher-value options that align with their goals. Through persuasive and personalized approaches, we guide customers towards making informed purchasing decisions that result in increased satisfaction and business growth. Unlock the potential of upselling and provide enhanced value to your customers with our Up Sell service.",
+        },
+      ],
+      faqs: [
+        {
+          id: 1,
+          question: "How can the Delight service benefit my business?",
+          ans: " The Delight service can benefit your business by enhancing customer satisfaction, increasing customer loyalty, and driving repeat business. Through cross-selling and upselling techniques, we can help you generate additional revenue from existing customers and deepen their engagement with your brand.",
+        },
+        {
+          id: 2,
+          question:
+            " How do you identify opportunities for cross-selling and upselling through the Delight service?",
+          ans: " We identify opportunities for cross-selling and upselling through comprehensive customer analysis and understanding their preferences and needs. By leveraging customer data, purchase history, and behavior patterns, we can tailor personalized recommendations and offers that resonate with each individual customer, increasing the likelihood of conversion and delighting them with valuable add-on options.",
+        },
+      ],
+    },
+    {
+      id: 9,
+      route: "/recruitment-services",
+      component: RecruitmentServices,
+      name: "Recruitment Services",
+      description:
+        "Introducing our new Requirements Service at Globallyz! Streamline your project planning and execution with our expert team, ensuring precise and tailored solutions that meet your specific needs. Experience efficiency and success like never before.",
       featuredImg: "",
       services: [
         {

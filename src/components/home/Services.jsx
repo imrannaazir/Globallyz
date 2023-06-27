@@ -56,6 +56,14 @@ export default function Services() {
         "Our dedicated delivery team at Globallyz ensures the smooth implementation and successful execution of our solutions. With meticulous planning and timely execution, we strive to exceed expectations, deliver exceptional service, and achieve measurable results for our clients.",
       route: "/delivery-service",
     },
+    {
+      id: 7,
+      name: "Recruitment ",
+      img: "https://i.ibb.co/ftbwz2Q/delivery-1.jpg",
+      details:
+        "Introducing our new Requirements Service at Globallyz! Streamline your project planning and execution with our expert team, ensuring precise and tailored solutions that meet your specific needs. Experience efficiency and success like never before.",
+      route: "/recruitment -service",
+    },
   ];
   return (
     <>
