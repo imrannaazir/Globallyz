@@ -47,7 +47,7 @@ export default function Navbar() {
         {
           id: 3,
           name: "Team",
-          route: "/team/core-team",
+          route: "/team/on-board",
         },
       ],
     },

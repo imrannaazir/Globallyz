@@ -4,9 +4,32 @@ import "swiper/swiper-bundle.min.css";
 import BlogCard from "./BlogCard";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import SectionHeader from "./SectionHeader";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const BlogSlider = () => {
-  const blogs = [
+  // state for blogs
+  const [blogs, setBlogs] = useState([]);
+
+  // fetch blogs api request
+  useEffect(() => {
+    // function for get blogs
+    const getBlogs = async () => {
+      try {
+        const response = await axios.get(
+          "http://mws.dignityofnoble.org/api/v1/blog-posting/published-don-book-topics"
+        );
+        setBlogs(response?.data?.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    // invoked the getBlogs function
+    getBlogs();
+  }, []);
+
+  const data = [
     {
       id: 1,
       title:
@@ -80,6 +103,7 @@ const BlogSlider = () => {
       comments: "111",
     },
   ];
+
   return (
     <div className="relative w-full group p-4">
       <SectionHeader>OUR LATEST BLOG</SectionHeader>
@@ -112,8 +136,8 @@ const BlogSlider = () => {
           },
         }}
       >
-        {blogs.map((blog) => (
-          <SwiperSlide key={blog.id}>
+        {blogs.map((blog, i) => (
+          <SwiperSlide key={i}>
             <BlogCard blog={blog} />
           </SwiperSlide>
         ))}

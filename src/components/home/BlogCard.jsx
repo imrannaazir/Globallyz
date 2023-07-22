@@ -1,18 +1,22 @@
+import { formatDate } from "../../utils/formatDate";
 import PrimaryBtnAlt from "../ui/PrimaryBtnAlt";
-import { AiFillHeart } from "react-icons/ai";
-import { BiCommentDetail } from "react-icons/bi";
+// import { AiFillHeart } from "react-icons/ai";
+// import { BiCommentDetail } from "react-icons/bi";
 
 // eslint-disable-next-line react/prop-types
 export default function BlogCard({ blog }) {
-  const { title, createdAt, content, thumbnail, likes, comments, id } =
-    blog || {};
+  const { id = 1, createdAt, topic_title, topic_desc, image_url } = blog || {};
+
+  // formatted date
+  const date = formatDate(createdAt);
+
   return (
     <div className="bg-white rounded-lg w-[375px]  hover:shadow-xl group overflow-hidden border-2">
       <div className="">
         <figure className="">
           <img
             className="rounded-t-lg   h-[230px] w-full"
-            src={thumbnail}
+            src={image_url}
             alt=""
           />
         </figure>
@@ -23,10 +27,12 @@ export default function BlogCard({ blog }) {
                 className="flex items-center gap-2 text-gray-500 hover:text-black"
                 href="#"
               >
-                {createdAt}
+                {date}
               </a>
             </li>
-            <li>
+
+            {/* number of comments */}
+            {/* <li>
               <a
                 className="flex items-center gap-2 text-gray-500 hover:text-black"
                 href="#"
@@ -34,8 +40,10 @@ export default function BlogCard({ blog }) {
                 <BiCommentDetail />
                 {comments}
               </a>
-            </li>
-            <li>
+            </li> */}
+
+            {/* number of likes */}
+            {/* <li>
               <a
                 className="flex items-center gap-2 text-gray-500 hover:text-black"
                 href="#"
@@ -43,16 +51,16 @@ export default function BlogCard({ blog }) {
                 <AiFillHeart />
                 {likes}
               </a>
-            </li>
+            </li> */}
           </ul>
           <div className="text-center my-5">
             <h3>
               <a className="text-lg font-semibold" href="#">
-                {title.slice(0, 36)}
+                {topic_title.slice(0, 36)}
               </a>
             </h3>
             <p className="text-gray-500 leading-[32px] text-justify">
-              {content.slice(0, 125)} <span>...</span>
+              {topic_desc.slice(0, 125)} <span>...</span>
             </p>
             <a href="#" className="">
               <PrimaryBtnAlt
