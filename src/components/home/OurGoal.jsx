@@ -1,6 +1,6 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import MotionWrapper from "../../HOC/MotionWrapper.JSX";
+import MotionWrapper from "../../HOC/MotionWrapper";
 import { fadeIn } from "../../utils/Motion";
 
 const TiltComponent = ({ index, heading, image, para }) => {
