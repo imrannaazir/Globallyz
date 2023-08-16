@@ -69,7 +69,7 @@ export default function Testimonials() {
 
         {/* teams */}
         <div className="flex flex-col gap-10">
-          {reviews.map((member) => (
+          {reviews?.map((member) => (
             <Member key={member.id} member={member} />
           ))}
         </div>

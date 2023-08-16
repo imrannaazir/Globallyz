@@ -77,7 +77,7 @@ export default function ContentMarketingTeam() {
   ];
   return (
     <div className="flex flex-col gap-10">
-      {teams.map((member) => (
+      {teams?.map((member) => (
         <Member key={member.id} member={member} />
       ))}
     </div>

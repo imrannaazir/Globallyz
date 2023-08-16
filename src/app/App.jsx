@@ -709,7 +709,7 @@ const App = () => {
 
   return (
     <Routes>
-      {routes.map((route) => (
+      {routes?.map((route) => (
         <Route
           key={route.id}
           path={route.route}

@@ -10,7 +10,7 @@ export default function FAQs({ faqs, name }) {
       </h1>
       <div className="flex flex-col gap-2">
         {/* faq 1 */}
-        {faqs.map((faq) => (
+        {faqs?.map((faq) => (
           <Faq key={faq.id} faq={faq} />
         ))}
       </div>

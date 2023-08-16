@@ -60,7 +60,7 @@ const BlogSlider = () => {
           },
         }}
       >
-        {blogs.map((blog, i) => (
+        {blogs?.map((blog, i) => (
           <SwiperSlide key={i}>
             <BlogCard blog={blog} />
           </SwiperSlide>

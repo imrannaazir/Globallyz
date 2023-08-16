@@ -2936,7 +2936,7 @@ export default function Package() {
               </ul>
               <ul className="">
                 <h5 className="text-[1.3rem] text-gray-500 mt-4">Offerings</h5>
-                {plan.offerings.map((offering, i) => (
+                {plan.offerings?.map((offering, i) => (
                   <li className="flex items-start gap-2" key={i}>
                     {" "}
                     <HiOutlineCheckBadge className="mt-1 text-primary" />{" "}

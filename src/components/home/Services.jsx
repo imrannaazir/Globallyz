@@ -83,7 +83,7 @@ export default function Services() {
       "
       >
         {/* cards */}
-        {services.map((service) => (
+        {services?.map((service) => (
           <SingleService key={service?.id} service={service} />
         ))}
       </div>
