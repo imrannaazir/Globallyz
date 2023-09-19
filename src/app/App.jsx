@@ -19,6 +19,7 @@ import ContentMarketingTeam from "../components/team/ContentMarketingTeam";
 import ToolsTechnologies from "../components/team/ToolsTechnologies";
 import OnBoard from "../components/team/OnBoard";
 import RecruitmentServices from "../pages/RecruitmentServices";
+import FAQ from "../pages/FAQ";
 
 const App = () => {
   const routes = [
@@ -704,6 +705,11 @@ const App = () => {
       id: 14,
       route: "/career",
       component: Career,
+    },
+    {
+      id: 15,
+      route: "/faq",
+      component: FAQ,
     },
   ];
 

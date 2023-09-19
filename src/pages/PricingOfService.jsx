@@ -529,7 +529,7 @@ export default function PricingOfService() {
       >
         Pricing for {service?.name}
       </h1>
-      <div className="overflow-x-auto bg-base-200 max-w-screen-xl  mx-auto p-4">
+      <div className="overflow-x-auto bg-base-200 max-w-screen-xl mx-auto p-4">
         <table className="table">
           {/* head */}
           <ServicePricingHead />

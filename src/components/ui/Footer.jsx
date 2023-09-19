@@ -43,6 +43,11 @@ const Footer = () => {
                     Blog
                   </Link>
                 </li>
+                <li className="mb-4">
+                  <Link to="/faq" className="hover:underline">
+                    FAQ
+                  </Link>
+                </li>
               </ul>
             </div>
 
